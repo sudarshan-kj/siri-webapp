@@ -15,18 +15,22 @@ nav select {
   display: none;
 }
 
-li {
-  flex: 1 0 5.5rem;
-}
-
 a {
   font-size: 1.3rem;
-  color: #fff;
+  color: #b4d7ff;
   text-decoration: none;
 }
 
-a:hover {
-  border-bottom: 2px solid #5ea9ff;
+a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px#b4d7ff;
+  transform: scaleX(0);
+  transition: transform 100ms ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 960px) {

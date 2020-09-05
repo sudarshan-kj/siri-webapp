@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Navigation.module.css";
+import styles from "./index.module.css";
 const Navigation = ({ list }) => (
   <nav className={styles.nav}>
     <ul>
