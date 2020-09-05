@@ -1,0 +1,9 @@
+.logo {
+  color: #fff;
+  flex: 10;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
