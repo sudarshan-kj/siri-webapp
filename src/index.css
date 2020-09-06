@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
 }
 body {
+  background: url("../src/assets/bg-3.png");
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Kumbh Sans", sans-serif,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
