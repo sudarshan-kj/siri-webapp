@@ -15,15 +15,6 @@ const Navigation = ({ list }) => (
         </li>
       ))}
     </ul>
-
-    <select>
-      <option value="" selected="selected">
-        Select
-      </option>
-      {list.map((id, item) => (
-        <option value="/collections/all">{item}</option>
-      ))}
-    </select>
   </nav>
 );
 
