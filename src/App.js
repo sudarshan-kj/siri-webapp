@@ -7,13 +7,13 @@ import { getLanguageObject } from "./components/Language";
 import i18next from "i18next";
 
 const App = () => {
-  const [lang, setLang] = React.useState(i18next.language);
-
+  const [language, setLanguage] = React.useState(i18next.language);
   const onToggleLanguage = () => {
-    let toggledLanguage = getLanguageObject(lang, true).value;
+    let toggledLanguage = getLanguageObject(language, true).value;
     i18next.changeLanguage(toggledLanguage);
-    setLang(toggledLanguage);
+    setLanguage(toggledLanguage);
   };
+
   return (
     <div className={styles.wrapper}>
       <Header onToggleLanguage={onToggleLanguage} />
