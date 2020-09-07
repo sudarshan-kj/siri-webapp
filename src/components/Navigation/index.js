@@ -3,8 +3,8 @@ import styles from "./index.module.css";
 const Navigation = ({ list }) => (
   <nav className={styles.nav}>
     <ul>
-      {list.map((item) => (
-        <li>
+      {list.map((item, id) => (
+        <li key={id}>
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -20,7 +20,7 @@ const Navigation = ({ list }) => (
       <option value="" selected="selected">
         Select
       </option>
-      {list.map((item) => (
+      {list.map((id, item) => (
         <option value="/collections/all">{item}</option>
       ))}
     </select>
