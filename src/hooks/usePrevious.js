@@ -5,8 +5,8 @@ const usePrevious = (initialValue, value) => {
   React.useEffect(() => {
     ref.current = value;
   });
-  if (ref.current) return ref.current;
-  else return initialValue;
+  if (!ref.current) return initialValue;
+  return ref.current;
 };
 
 export default usePrevious;
