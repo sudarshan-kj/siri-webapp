@@ -1,9 +1,9 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 
 const useSkipFirstRender = (callback) => {
-  const firstRender = React.useRef(true);
+  const firstRender = useRef(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (firstRender.current) {
       firstRender.current = false;
       return;
