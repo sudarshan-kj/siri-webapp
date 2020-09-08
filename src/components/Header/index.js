@@ -4,7 +4,11 @@ import Logo from "../Logo";
 import Navigation from "../Navigation";
 import LanguageButton from "../Language";
 
-const list = ["Home", "About", "Contact"];
+const list = [
+  { name: "Home", link: "#footerId" },
+  { name: "About Us", link: "#footerId" },
+  { name: "Contact", link: "#footerId" },
+];
 
 const Header = ({ onToggleLanguage }) => {
   return (

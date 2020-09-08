@@ -5,12 +5,8 @@ const Navigation = ({ list }) => (
     <ul>
       {list.map((item, id) => (
         <li key={id}>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://google.com"
-          >
-            {item}
+          <a rel="noopener noreferrer" href={item.link}>
+            {item.name}
           </a>
         </li>
       ))}
