@@ -1,7 +1,12 @@
 .logo {
-  color: #fff;
   flex: 10;
+}
+
+.logo h3 {
   font-size: 2rem;
+  letter-spacing: 0.3em;
+  color: #054691;
+  margin: 0;
 }
 
 img {

@@ -2,7 +2,11 @@ import React from "react";
 import styles from "./index.module.css";
 
 const Footer = () => {
-  return <h5 className={styles.footer}>I am footer</h5>;
+  return (
+    <div className={styles.footer}>
+      <p>&copy; 2020 All rights reserved</p>
+    </div>
+  );
 };
 
 export default Footer;

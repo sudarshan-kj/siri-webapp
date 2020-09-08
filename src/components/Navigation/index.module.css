@@ -4,20 +4,16 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex;
+  display: none;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-left: 0;
   margin: 0 1rem;
 }
 
-nav select {
-  display: none;
-}
-
 a {
   font-size: 1.3rem;
-  color: #b4d7ff;
+  color: #054691;
   text-decoration: none;
 }
 
@@ -33,11 +29,8 @@ a:hover::after {
   transform: scaleX(1);
 }
 
-@media (max-width: 960px) {
+@media (min-width: 960px) {
   nav ul {
-    display: none;
-  }
-  nav select {
-    display: inline-block;
+    display: flex;
   }
 }
