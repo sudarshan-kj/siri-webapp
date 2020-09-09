@@ -5,8 +5,8 @@ import Navigation from "../Navigation";
 import LanguageButton from "../Language";
 
 const list = [
-  { name: "Home", link: "#footerId" },
-  { name: "About Us", link: "#footerId" },
+  { name: "Home", link: "#" },
+  { name: "About Us", link: "#" },
   { name: "Contact", link: "#footerId" },
 ];
 
