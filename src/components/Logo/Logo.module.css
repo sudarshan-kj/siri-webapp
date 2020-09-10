@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.logo {
+  height: 10px;
+}
+
 img {
   max-width: 100%;
 }
