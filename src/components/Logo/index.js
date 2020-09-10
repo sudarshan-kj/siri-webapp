@@ -1,17 +1,5 @@
 import React from "react";
 import styles from "./Logo.module.css";
-<<<<<<< HEAD
-
-const Logo = () => (
-  <div className={styles.logo}>
-    <img
-      className={styles.logoIcon}
-      src={"../../assets/logo-eng.png"}
-      alt="Logo"
-    />
-  </div>
-);
-=======
 import { Lang, getLanguageObject } from "components/Language";
 import LogoIconEng from "assets/logo-eng.png";
 import LogoIconKan from "assets/logo-kan.png";
@@ -29,6 +17,5 @@ const Logo = () => {
 
   return <div className={styles.logoContainer}>{langLogo}</div>;
 };
->>>>>>> addLogo
 
 export default Logo;
