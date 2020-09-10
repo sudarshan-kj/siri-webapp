@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import i18n from "../../utils/i18n";
+import i18n from "utils/i18n";
 
 const Main = () => {
   return (

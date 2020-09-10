@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import styles from "./App.module.css";
-import { getLanguageObject } from "./components/Language";
+import Header from "components/Header";
+import Main from "components/Main";
+import Footer from "components/Footer";
+import styles from "App.module.css";
+import { getLanguageObject } from "components/Language";
 import i18next from "i18next";
 
 const App = () => {

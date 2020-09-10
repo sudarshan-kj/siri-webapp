@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Logo.module.css";
+import LogoIcon from "assets/logo-eng.png";
 const Logo = () => (
-  <div className={styles.logo}>
-    <h3>SIRI</h3>
+  <div className={styles.logoContainer}>
+    <img className={styles.logo} src={LogoIcon} alt="Logo" />
   </div>
 );
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
-import useSkipFirstRender from "../../hooks/useSkipFirstRender";
+import useSkipFirstRender from "hooks/useSkipFirstRender";
 
 const toastStyle = {
   textAlign: "center",
