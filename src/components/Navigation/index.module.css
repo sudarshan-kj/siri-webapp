@@ -11,6 +11,10 @@ nav ul {
   margin: 0 1rem;
 }
 
+/*Styling is not added for li elements by either making then flex:1 or setting a fixed width since, that will
+prevent <a> elements from having hover just under the text width they are defined for, 
+since otherwise the on hover effect of <a>  would be applicable to the fixed of parent li*/
+
 a {
   font-size: 1.3rem;
   color: #054691;

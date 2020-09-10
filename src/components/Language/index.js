@@ -10,13 +10,17 @@ export const Lang = {
   KAN: { value: "kan", displayName: " ಕನ್ನಡ" },
 };
 
-export const getLanguageObject = (lang, toggle) => {
-  if (lang) {
+export const getLanguageObject = (lang, toggle = false) => {
+  if (isValidLanguage(lang)) {
     if (toggle) {
       return lang === Lang.ENG.value ? Lang.KAN : Lang.ENG;
     }
     return lang === Lang.ENG.value ? Lang.ENG : Lang.KAN;
   }
+};
+
+const isValidLanguage = (lang) => {
+  return Object.keys(Lang).some((key) => Lang[key]["value"] === lang);
 };
 
 const LanguageButton = ({ onToggleLanguage }) => {

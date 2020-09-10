@@ -1,5 +1,8 @@
+/*Setting width on .logoContainer is of no use since the width is determined by the flex container and hence only height matters */
+
 .logoContainer {
-  flex: 10;
+  flex: 8;
+  height: 75%;
 }
 
 .logoContainer h3 {
@@ -10,5 +13,6 @@
 }
 
 img {
-  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
