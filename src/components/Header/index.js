@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
-import Logo from "../Logo";
-import Navigation from "../Navigation";
-import LanguageButton from "../Language";
+import Logo from "components/Logo";
+import Navigation from "components/Navigation";
+import LanguageButton from "components/Language";
 
 const list = [
   { name: "Home", link: "#" },
