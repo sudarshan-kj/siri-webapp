@@ -1,8 +1,8 @@
-.logo {
+.logoContainer {
   flex: 10;
 }
 
-.logo h3 {
+.logoContainer h3 {
   font-size: 2rem;
   letter-spacing: 0.3em;
   color: #054691;
