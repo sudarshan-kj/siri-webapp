@@ -6,6 +6,10 @@ import LogoIconKan from "assets/logo-kan.png";
 import i18next from "i18next";
 import i18n from "utils/i18n";
 
+/*
+Its important to note that the styling of the div to include the logo was not done using CSS.
+This is intentional since we could not otherwise control changing the logo on toggling the language */
+
 const Logo = () => {
   const language = getLanguageObject(i18next.language);
   const langLogo =
