@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Logo.module.css";
-import { Lang, getLanguageObject } from "components/Language";
+import { langOptions, getLanguageObject } from "components/Language";
 import LogoIconEng from "assets/logo-eng.png";
 import LogoIconKan from "assets/logo-kan.png";
 import i18next from "i18next";
@@ -13,7 +13,7 @@ This is intentional since we could not otherwise control changing the logo on to
 const Logo = () => {
   const language = getLanguageObject(i18next.language);
   const langLogo =
-    language === Lang.KAN ? (
+    language === langOptions.KAN ? (
       <img src={LogoIconKan} alt={i18n.t("Siri Logo")} />
     ) : (
       <img src={LogoIconEng} alt={i18n.t("Siri Logo")} />

@@ -10,12 +10,15 @@ const list = [
   { name: "Contact", link: "#footerId" },
 ];
 
-const Header = ({ onToggleLanguage }) => {
+const Header = ({ selectedLanguage, onToggleLanguage }) => {
   return (
     <div className={styles.header}>
       <Logo />
       <Navigation list={list} />
-      <LanguageButton onToggleLanguage={onToggleLanguage} />
+      <LanguageButton
+        selectedLanguage={selectedLanguage}
+        onToggleLanguage={onToggleLanguage}
+      />
     </div>
   );
 };
