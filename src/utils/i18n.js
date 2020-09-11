@@ -5,6 +5,10 @@ import translationEng from "locales/en/translation.json";
 
 i18next.use(LanguageDetector).init({
   // we init with resources
+
+  /*adding the key 'lng' is important here since it defines the language the LS uses when the it is not yet initialized. If not set, it defaults to 'en-GB',
+   which causes getLanguageObject() in {components/Logo} to fail*/
+
   resources: {
     en: {
       translations: translationEng,
@@ -14,6 +18,7 @@ i18next.use(LanguageDetector).init({
       translations: translationKan,
     },
   },
+  lng: "en",
   fallbackLng: "en",
   debug: true,
 
