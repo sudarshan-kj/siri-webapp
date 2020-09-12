@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
+import { ReactComponent as MenuIcon } from "assets/menu.svg";
 const Navigation = ({ list }) => (
   <nav className={styles.nav}>
     <ul>
@@ -12,7 +13,7 @@ const Navigation = ({ list }) => (
       ))}
     </ul>
     <div className={styles.dropdown}>
-      <button className={styles.dropbtn}>Dropdown</button>
+      <MenuIcon className={styles.dropbtn} />
       <div className={styles.dropdownContent}>
         {list.map((item, id) => (
           <a rel="noopener noreferrer" href={item.link}>
