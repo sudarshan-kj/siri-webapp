@@ -14,9 +14,11 @@ const Navigation = ({ list }) => (
     <div className={styles.dropdown}>
       <button className={styles.dropbtn}>Dropdown</button>
       <div className={styles.dropdownContent}>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#footerId">Link 3</a>
+        {list.map((item, id) => (
+          <a rel="noopener noreferrer" href={item.link}>
+            {item.name}
+          </a>
+        ))}
       </div>
     </div>
   </nav>
