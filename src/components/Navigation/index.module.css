@@ -2,6 +2,9 @@ nav {
   flex: 3;
 }
 
+/* Making it inline-block is necessary. Otherwise, the drop down expands to the whole width of available space created
+by flex and hovering on the empty space to the right of the menu icon brings down the menu, which is not our desired requirement */
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -10,17 +13,18 @@ nav {
 .dropbtn {
   fill: #0d3d74;
   padding: 0 20px 0;
+  /*this width is necesary. Otherwise, svg will not have a defined width limit and hence the parent 'dropdown' container will end up taking no space.
+  Having a fixed unit is necessary here*/
   width: 30px;
-  border: none;
 }
 
 .dropdownContent {
   display: none;
   position: absolute;
+  left: 15px;
+  width: 150%;
   background-color: #f1f1f1;
-  width: 200%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .dropdown:hover .dropdownContent {
