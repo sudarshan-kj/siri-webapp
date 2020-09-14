@@ -22,7 +22,7 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
   display: none;
   position: absolute;
   left: 15px;
-  width: 150%;
+  width: 160%;
   background-color: #f1f1f1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
@@ -39,7 +39,8 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
 }
 
 .dropdownContent a:hover {
-  background-color: rgb(0, 0, 0, 0.1);
+  background-color: rgb(5, 70, 145, 0.9);
+  color: #fff;
 }
 
 nav ul {
