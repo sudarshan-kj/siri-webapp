@@ -2,7 +2,6 @@
 
 .logoContainer {
   flex: 8;
-  height: 75%;
 }
 
 .logoContainer h3 {
@@ -13,10 +12,6 @@
 }
 
 .logo {
-  height: 10px;
-}
-
-img {
-  max-height: 100%;
-  object-fit: cover;
+  margin: 0.5rem;
+  height: 4rem;
 }

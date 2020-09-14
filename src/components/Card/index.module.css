@@ -1,0 +1,21 @@
+.cardContainer {
+  margin: 5%;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.s {
+  height: 10%;
+  width: 10%;
+}
+
+.m {
+  height: 20%;
+  width: 20%;
+}
+
+.l {
+  height: 50%;
+  height: 50%;
+}

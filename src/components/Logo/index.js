@@ -14,9 +14,17 @@ const Logo = () => {
   const language = getLanguageObject(i18next.language);
   const langLogo =
     language === langOptions.KAN ? (
-      <img src={LogoIconKan} alt={i18n.t("Siri Logo")} />
+      <img
+        className={styles.logo}
+        src={LogoIconKan}
+        alt={i18n.t("Siri Logo")}
+      />
     ) : (
-      <img src={LogoIconEng} alt={i18n.t("Siri Logo")} />
+      <img
+        className={styles.logo}
+        src={LogoIconEng}
+        alt={i18n.t("Siri Logo")}
+      />
     );
 
   return <div className={styles.logoContainer}>{langLogo}</div>;
