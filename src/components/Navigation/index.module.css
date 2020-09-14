@@ -27,7 +27,7 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown:hover .dropdownContent {
+.dropdown:active .dropdownContent {
   display: block;
 }
 
@@ -72,6 +72,12 @@ nav ul a::after {
 
 nav ul a:hover::after {
   transform: scaleX(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
 }
 
 @media (min-width: 960px) {

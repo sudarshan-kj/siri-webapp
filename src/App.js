@@ -6,6 +6,8 @@ import styles from "App.module.css";
 import { getLanguageObject, langLocalStorageKey } from "components/Language";
 import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
+import BackToTop from "react-back-to-top-button";
+import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 
 const App = () => {
   const [language, setLanguage] = usePersistence(
@@ -24,6 +26,11 @@ const App = () => {
       <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
       <Main />
       <Footer />
+      <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
+        <div className={styles.backToTopBackground}>
+          <BackToTopIcon className={styles.backToTopIcon} />
+        </div>
+      </BackToTop>
     </div>
   );
 };
