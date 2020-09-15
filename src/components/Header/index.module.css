@@ -1,9 +1,9 @@
 .header {
-  /* background-color: #05264c; */
-  background: url(../../assets/bg-3.png);
+  background-color: #0d3d74ec;
+  /* background: url(../../assets/bg-3.png); */
   height: 4%;
   /* border-bottom: 4px solid#b4d7ff; */
-  border-bottom: 4px solid#054691;
+  /* border-bottom: 4px solid#054691; */
   display: flex;
   justify-content: space-between;
   align-items: center;

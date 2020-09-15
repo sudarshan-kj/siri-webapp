@@ -11,7 +11,7 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
 }
 
 .dropbtn {
-  fill: #0d3d74;
+  fill: #fff;
   padding: 0;
   /*this width is necesary. Otherwise, svg will not have a defined width limit and hence the parent 'dropdown' container will end up taking no space.
   Having a fixed unit is necessary here*/
@@ -59,7 +59,7 @@ since otherwise the on hover effect of <a>  would be applicable to the fixed of 
 
 nav ul a {
   font-size: 1.3rem;
-  color: #054691;
+  color: #fff;
   text-decoration: none;
 }
 

@@ -25,8 +25,8 @@ const App = () => {
   return (
     <div className={styles.wrapper}>
       <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
-      <Main />
       <Card size="max" />
+      <Main />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
         <div className={styles.backToTopBackground}>

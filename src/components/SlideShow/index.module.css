@@ -6,8 +6,20 @@
 
 .eachSlide > div {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  height: 300px;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.eachSlide span {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: #00000091;
+  text-align: center;
 }
 
 /* Use the following if you want to display half and image on one slide

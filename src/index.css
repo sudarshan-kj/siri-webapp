@@ -2,11 +2,12 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: url("assets/bg-3.png");
+  background-color: #ececec;
+  /* background: url("assets/bg-4.jpg"); */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Kumbh Sans", sans-serif,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
