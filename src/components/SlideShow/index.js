@@ -1,14 +1,19 @@
 import React from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
-import building from "assets/slides/building.jpg";
-import sea from "assets/slides/sea.jpg";
-import city from "assets/slides/city.jpg";
+import building from "assets/slides/food.jpg";
+import sea from "assets/slides/girl.jpg";
+import city from "assets/slides/bulb.jpg";
 import styles from "./index.module.css";
 
 const Slideshow = () => {
   return (
-    <Slide easing="ease" duration={2000} indicators transitionDuration={300}>
+    <Slide
+      arrows={false}
+      easing="ease"
+      duration={2000}
+      transitionDuration={500}
+    >
       <div className={styles.eachSlide}>
         <div>
           <img src={building} alt="sea" />

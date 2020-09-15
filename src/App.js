@@ -8,6 +8,7 @@ import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
 import BackToTop from "react-back-to-top-button";
 import { ReactComponent as BackToTopIcon } from "assets/top.svg";
+import Card from "components/Card";
 
 const App = () => {
   const [language, setLanguage] = usePersistence(
@@ -25,6 +26,7 @@ const App = () => {
     <div className={styles.wrapper}>
       <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
       <Main />
+      <Card size="max" />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
         <div className={styles.backToTopBackground}>

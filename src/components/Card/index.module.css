@@ -1,10 +1,8 @@
 .cardContainer {
-  margin: 5% 0 5%;
   box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
-  padding: 5%;
+  padding: 0%;
   border-radius: 5px;
 }
-
 .s {
   height: 10%;
   width: 10%;
@@ -17,5 +15,20 @@
 
 .l {
   height: 50%;
-  height: 50%;
+  width: 50%;
+}
+
+.xl {
+  height: 75%;
+  widows: 75%;
+}
+
+.max {
+  height: 100%;
+}
+
+@media (min-width: 960px) {
+  .cardContainer {
+    padding: 0%;
+  }
 }

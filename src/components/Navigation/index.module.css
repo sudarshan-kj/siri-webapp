@@ -12,10 +12,11 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
 
 .dropbtn {
   fill: #0d3d74;
-  padding: 0 20px 0;
+  padding: 0;
   /*this width is necesary. Otherwise, svg will not have a defined width limit and hence the parent 'dropdown' container will end up taking no space.
   Having a fixed unit is necessary here*/
-  width: 30px;
+  height: 30px;
+  width: 70px;
 }
 
 .dropdownContent {
@@ -80,7 +81,7 @@ nav ul a:hover::after {
   }
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   nav ul {
     display: flex;
   }

@@ -7,7 +7,6 @@ const Main = () => {
   return (
     <div className={styles.main}>
       <h1>{i18n.t("Introduction")}</h1>
-      <Card size="l" />
       <article>
         <section>
           <h3>Section 1</h3>

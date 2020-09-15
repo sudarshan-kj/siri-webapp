@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { ReactComponent as MenuIcon } from "assets/menu.svg";
+import { ReactComponent as MenuIcon } from "assets/dropdown.svg";
 const Navigation = ({ list }) => {
   return (
     <nav className={styles.nav}>
