@@ -1,5 +1,5 @@
 .cardContainer {
-  margin: 5%;
+  margin: 5% 0 5%;
   box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
   padding: 5%;
   border-radius: 5px;
@@ -18,19 +18,4 @@
 .l {
   height: 50%;
   height: 50%;
-}
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 350px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
 }
