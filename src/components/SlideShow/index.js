@@ -17,20 +17,27 @@ const Slideshow = () => {
       <div className={styles.eachSlide}>
         <div className={styles.bgContainer}>
           <img src={green} alt="fornow" />
-          <span />
+
+          <span className={styles.tint}>
+            <p>This is Sudarshan KJ and he is going to be the best ever!</p>
+          </span>
         </div>
       </div>
       <div className={styles.eachSlide}>
         <div className={styles.bgContainer}>
           <img src={girl} alt="fornow" />
-          <span />
+          <span className={styles.tint}>
+            <p>This is Sudarshan KJ and he is going to be the best ever!</p>
+          </span>
           {/*Refer to corresponding CSS for the reasoning <span /> */}
         </div>
       </div>
       <div className={styles.eachSlide}>
         <div className={styles.bgContainer}>
           <img src={bulb} alt="fornow" />
-          <span />
+          <span className={styles.tint}>
+            <p>This is Sudarshan KJ and he is going to be the best ever!</p>
+          </span>
           {/*Refer to corresponding CSS for the reasoning <span /> */}
         </div>
       </div>
