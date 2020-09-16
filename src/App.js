@@ -4,6 +4,7 @@ import Main from "components/Main";
 import Footer from "components/Footer";
 import styles from "App.module.css";
 import { getLanguageObject, langLocalStorageKey } from "components/Language";
+import RoundContent from "components/generic/RoundContent";
 import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
 import BackToTop from "react-back-to-top-button";
@@ -29,9 +30,9 @@ const App = () => {
       <Main />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
-        <div className={styles.backToTopBackground}>
+        <RoundContent radius="35px" bgColor="white">
           <BackToTopIcon className={styles.backToTopIcon} />
-        </div>
+        </RoundContent>
       </BackToTop>
     </div>
   );

@@ -1,5 +1,6 @@
 .footer {
-  background-color: #0d3d74;
+  background-color: rgb(31, 31, 31);
+  /* background-color: #0d3d74; */
   display: flex;
   color: white;
   justify-content: center;

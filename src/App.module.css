@@ -1,12 +1,3 @@
-.backToTopBackground {
-  width: 56px;
-  height: 56px;
-  background: rgb(231, 231, 231);
-  border-radius: 50%;
-}
 .backToTopIcon {
-  fill: #054691;
-  margin-top: 3px;
-  width: 50px;
-  height: 50px;
+  fill: black;
 }

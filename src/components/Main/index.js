@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
+import RoundContent from "components/generic/RoundContent";
 
 const Main = () => {
   return (
     <div className={styles.main}>
+      <RoundContent bgColor="#B22222" radius="100px">
+        <h2>{i18n.t("Hello")}</h2>
+      </RoundContent>
       <h1>{i18n.t("Introduction")}</h1>
       <article>
         <section>
