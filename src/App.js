@@ -30,7 +30,7 @@ const App = () => {
       <Main />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
-        <RoundContent radius="35px" bgColor="white">
+        <RoundContent radius="35px" bgColor="#C8C8C8">
           <BackToTopIcon className={styles.backToTopIcon} />
         </RoundContent>
       </BackToTop>
