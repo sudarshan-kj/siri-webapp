@@ -1,5 +1,5 @@
 nav {
-  flex: 3;
+  flex: 2;
 }
 
 /* Making it inline-block is necessary. Otherwise, the drop down expands to the whole width of available space created
@@ -86,7 +86,16 @@ nav ul a:hover::after {
     display: flex;
   }
 
+  nav {
+    flex: 6;
+  }
+
   .dropdown {
     display: none;
+  }
+}
+@media screen and (min-width: 1350px) {
+  nav {
+    flex: 3;
   }
 }

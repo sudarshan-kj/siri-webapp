@@ -15,22 +15,22 @@ const Slideshow = () => {
       transitionDuration={500}
     >
       <div className={styles.eachSlide}>
-        <div style={{ backgroundImage: `url(${green})` }}>
-          <span>
-            The green sea image describes what best can be done to keep all the
-            things going
-          </span>
+        <div className={styles.bgContainer}>
+          <img src={green} alt="fornow" />
+          <span />
         </div>
       </div>
       <div className={styles.eachSlide}>
-        <div style={{ backgroundImage: `url(${girl})` }}>
-          <span>The girl in the picture</span>
+        <div className={styles.bgContainer}>
+          <img src={girl} alt="fornow" />
+          <span />
           {/*Refer to corresponding CSS for the reasoning <span /> */}
         </div>
       </div>
       <div className={styles.eachSlide}>
-        <div style={{ backgroundImage: `url(${bulb})` }}>
-          <span>The red light bulb</span>
+        <div className={styles.bgContainer}>
+          <img src={bulb} alt="fornow" />
+          <span />
           {/*Refer to corresponding CSS for the reasoning <span /> */}
         </div>
       </div>
