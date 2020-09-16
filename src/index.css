@@ -2,8 +2,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: #ececec;
-  /* background: url("assets/bg-4.jpg"); */
+  /* background-color: #ececec; */
+  background: url("assets/bg-3.png");
   margin: 0;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
