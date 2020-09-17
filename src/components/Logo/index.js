@@ -27,7 +27,11 @@ const Logo = () => {
       />
     );
 
-  return <div className={styles.logoContainer}>{langLogo}</div>;
+  return (
+    <div className={styles.logoContainer}>
+      <a href="#footerId">{langLogo}</a>
+    </div>
+  );
 };
 
 export default Logo;

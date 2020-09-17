@@ -61,6 +61,7 @@ nav ul a {
   font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 nav ul a::after {

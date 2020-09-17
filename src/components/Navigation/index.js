@@ -1,15 +1,23 @@
 import React from "react";
 import styles from "./index.module.css";
 import { ReactComponent as MenuIcon } from "assets/dropdown.svg";
+import { Link } from "react-scroll";
+
 const Navigation = ({ list }) => {
   return (
     <nav className={styles.nav}>
       <ul>
         {list.map((item, id) => (
           <li key={id}>
-            <a rel="noopener noreferrer" href={item.link}>
+            <Link
+              activeClass="active"
+              to={item.link}
+              smooth={true}
+              offset={50}
+              duration={300}
+            >
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
