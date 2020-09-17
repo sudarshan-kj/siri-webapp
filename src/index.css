@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  /* background-color: #ececec; */
-  background: black;
   margin: 0;
   font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -26,7 +24,7 @@ body {
 .sk-cube-grid .sk-cube {
   width: 33%;
   height: 33%;
-  background-color: rgb(165, 165, 165);
+  background-color: #555555;
   float: left;
   animation: sk-cubeGridScaleDelay 0.9s infinite ease-in-out;
 }
@@ -57,6 +55,7 @@ body {
 
 .sk-cube-grid .sk-cube7 {
   animation-delay: 0s;
+  background-color: #b22222;
 }
 
 .sk-cube-grid .sk-cube8 {
