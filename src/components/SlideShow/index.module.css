@@ -1,5 +1,6 @@
 .loadingBgContainer {
-  background: #1f1f1f;
+  /*Color of empty div container*/
+  background: #131313;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -20,7 +21,7 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  /*This background sets the color of the container when the image has not loaded yet */
+  /*This background sets the color of the container when the image has not loaded yet, provided there is no enclosing container whose bg color has been set */
   background: #000000a2;
 }
 

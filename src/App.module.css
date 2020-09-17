@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  animation: fadein 500ms;
+  animation: fadein 700ms;
 }
 
 @keyframes fadein {

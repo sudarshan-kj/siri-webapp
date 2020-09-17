@@ -3,6 +3,16 @@
   background-color: rgb(238, 238, 238);
   margin: 2% auto;
   width: 80%;
+  animation: fadein 1.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 h1 {

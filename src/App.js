@@ -19,7 +19,7 @@ const App = () => {
   );
 
   function demoAsyncCall() {
-    return new Promise((resolve) => setTimeout(() => resolve(), 1000));
+    return new Promise((resolve) => setTimeout(() => resolve(), 300));
   }
 
   const onToggleLanguage = () => {
@@ -31,6 +31,8 @@ const App = () => {
   React.useEffect(() => {
     demoAsyncCall().then(() => setLoading(false));
   }, [loading]);
+
+  if (loading) return null;
 
   return (
     <div className={styles.wrapper}>
