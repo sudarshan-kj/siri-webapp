@@ -8,6 +8,16 @@
   height: 400px;
 }
 
+.customArrow {
+  position: absolute;
+  padding-top: 20%;
+}
+
+.customArrow:hover {
+  color: red;
+  opacity: 1;
+}
+
 .bgContainer {
   position: relative;
   width: 100%;

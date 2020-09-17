@@ -23,7 +23,8 @@ const Slideshow = () => {
   return (
     <div>
       <Slide
-        arrows={false}
+        prevArrow={<div className={styles.customArrow}>ok</div>}
+        arrows={true}
         easing="ease"
         duration={2000}
         transitionDuration={500}
