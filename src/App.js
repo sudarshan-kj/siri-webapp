@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "components/Header";
 import Main from "components/Main";
 import Footer from "components/Footer";
@@ -12,16 +12,25 @@ import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
   const [language, setLanguage] = usePersistence(
     langLocalStorageKey,
     i18next.language
   );
+
+  function demoAsyncCall() {
+    return new Promise((resolve) => setTimeout(() => resolve(), 1000));
+  }
 
   const onToggleLanguage = () => {
     let toggledLanguage = getLanguageObject(language, true).value;
     i18next.changeLanguage(toggledLanguage);
     setLanguage(toggledLanguage); // This ensures re-render
   };
+
+  React.useEffect(() => {
+    demoAsyncCall().then(() => setLoading(false));
+  }, [loading]);
 
   return (
     <div className={styles.wrapper}>
