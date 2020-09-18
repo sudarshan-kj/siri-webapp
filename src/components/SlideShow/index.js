@@ -22,32 +22,32 @@ const Slideshow = () => {
 
   return (
     <div>
+      <div
+        className={styles.loadingBgContainer}
+        style={{
+          display: loading ? "flex" : "none",
+        }}
+      >
+        <PulseLoader
+          css={override}
+          size={30}
+          color={"#B22222"}
+          loading={loading}
+        />
+      </div>
+
       <Slide
         prevArrow={<div className={styles.customArrow}>ok</div>}
         arrows={true}
         easing="ease"
+        style={{
+          display: loading ? "none" : "block",
+        }}
         duration={2000}
         transitionDuration={500}
       >
         <div className={styles.eachSlide}>
-          <div
-            className={styles.loadingBgContainer}
-            style={{
-              display: loading ? "flex" : "none",
-            }}
-          >
-            <PulseLoader
-              css={override}
-              size={30}
-              color={"#B22222"}
-              loading={loading}
-            />
-          </div>
-
-          <div
-            className={styles.bgContainer}
-            style={{ display: loading ? "none" : "block" }}
-          >
+          <div className={styles.bgContainer}>
             <img src={green} alt="fornow" onLoad={imageLoaded} />
             <span className={styles.tint}>
               <p>This is Sudarshan KJ and he is going to be the best ever!</p>

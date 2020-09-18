@@ -18,10 +18,6 @@ const App = () => {
     i18next.language
   );
 
-  function demoAsyncCall() {
-    return new Promise((resolve) => setTimeout(() => resolve(), 300));
-  }
-
   const onToggleLanguage = () => {
     let toggledLanguage = getLanguageObject(language, true).value;
     i18next.changeLanguage(toggledLanguage);
@@ -29,8 +25,8 @@ const App = () => {
   };
 
   React.useEffect(() => {
-    demoAsyncCall().then(() => setLoading(false));
-  }, [loading]);
+    setLoading(false);
+  }, []);
 
   if (loading) return null;
 
