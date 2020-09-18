@@ -7,6 +7,7 @@ import bulb from "assets/slides/bulb.jpg";
 import { css } from "@emotion/core";
 import PulseLoader from "react-spinners/PulseLoader";
 import styles from "./index.module.css";
+import { ReactComponent as Arrow } from "assets/left-arrow.svg";
 
 const Slideshow = () => {
   const [loading, setLoading] = useState(true);
@@ -37,7 +38,16 @@ const Slideshow = () => {
       </div>
 
       <Slide
-        prevArrow={<div className={styles.customArrow}>ok</div>}
+        prevArrow={
+          <div className={styles.prevArrowContainer}>
+            <Arrow className={styles.prevArrow} />
+          </div>
+        }
+        nextArrow={
+          <div className={styles.nextArrowContainer}>
+            <Arrow className={styles.nextArrow} />
+          </div>
+        }
         arrows={true}
         easing="ease"
         style={{

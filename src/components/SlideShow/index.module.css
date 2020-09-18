@@ -8,14 +8,33 @@
   height: 400px;
 }
 
-.customArrow {
+.prevArrowContainer {
   position: absolute;
-  padding-top: 20%;
+  padding: 0.6%;
+  left: 1%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
-.customArrow:hover {
-  color: red;
-  opacity: 1;
+.prevArrow {
+  fill: #ff0000;
+  opacity: 0.8;
+}
+
+.nextArrowContainer {
+  position: absolute;
+  padding: 0.6%;
+  right: 1%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+
+.nextArrow {
+  fill: #ff0000;
+  opacity: 0.8;
 }
 
 .bgContainer {
@@ -30,8 +49,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /*Setting the z index becomes necessary since we want the image to appear beneath the tint*/
   z-index: -1;
-  /*This background sets the color of the container when the image has not loaded yet, provided there is no enclosing container whose bg color has been set */
+  /*This background sets the color of the container when the image has not loaded yet, provided there is no enclosing 
+  container whose bg color has been set. In our case, we do have an enclosing container and hence this property shall not be applied */
   background: #000000a2;
 }
 
@@ -44,7 +65,7 @@
   font-size: 20px;
   color: rgb(230, 230, 230);
   background: #00000050;
-  /* background: #00000091; */
+  animation: fadeOutImg 0.5s forwards;
 }
 
 .tint p {
@@ -53,6 +74,57 @@
   width: 100%;
   padding: 10px;
   background: #0000007a;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  .prevArrowContainer:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  .prevArrowContainer:hover .prevArrow {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .nextArrowContainer:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0, 0.5);
+  }
+
+  .nextArrowContainer:hover .nextArrow {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .bgContainer:hover .tint {
+    animation: fadeInImg 0.5s forwards;
+  }
+}
+
+@keyframes fadeInImg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOutImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Use the following if you want to display half and image on one slide
