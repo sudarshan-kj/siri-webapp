@@ -9,6 +9,7 @@
 }
 
 .prevArrowContainer {
+  display: none;
   position: absolute;
   padding: 0.6%;
   left: 1%;
@@ -23,6 +24,7 @@
 }
 
 .nextArrowContainer {
+  display: none;
   position: absolute;
   padding: 0.6%;
   right: 1%;
@@ -76,7 +78,12 @@
   background: #0000007a;
 }
 
-@media screen and (hover: hover) and (pointer: fine) {
+@media screen and (hover: hover) {
+  .nextArrowContainer,
+  .prevArrowContainer {
+    display: block;
+  }
+
   .prevArrowContainer:hover {
     cursor: pointer;
     background: rgb(0, 0, 0, 0.5);
