@@ -51,8 +51,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*Setting the z index becomes necessary since we want the image to appear beneath the tint*/
-  z-index: -1;
+  /*Removed z-index from here */
   /*This background sets the color of the container when the image has not loaded yet, provided there is no enclosing 
   container whose bg color has been set. In our case, we do have an enclosing container and hence this property shall not be applied */
   background: #000000a2;
@@ -61,17 +60,16 @@
 .tint {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
   width: 100%;
   height: 100%;
-  font-size: 20px;
-  color: rgb(230, 230, 230);
   background: #00000050;
   animation: fadeOutImg 0.5s forwards;
 }
 
 .tint p {
   margin: 0;
+  font-size: 1.2rem;
+  color: rgb(230, 230, 230);
   text-align: center;
   width: 100%;
   padding: 10px;
