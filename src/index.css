@@ -11,6 +11,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Animation is displayed as long as the app container is empty. Since returning null on render adds a comment inside the root container, we 
+use the :empty pseudo class to determine if its really empty since the :empty pseudo class ignores comments to determine if its empty. 
+Refer: https://stackoverflow.com/questions/40987309/react-display-loading-screen-while-dom-is-rendering/#answer-40989121
+Check my comment on this answer too */
+
 #root:not(:empty) + .sk-cube-grid {
   display: none;
 }
