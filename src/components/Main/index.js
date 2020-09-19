@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
-import RoundContent from "components/generic/RoundContent";
+import Box from "components/generic/Box";
+import girlimage from "assets/avatars/girl.jpg";
 
 const Main = () => {
   return (
     <div className={styles.main}>
-      <RoundContent bgColor="#B22222" radius="100px">
+      <Box round bgColor="#B22222" radius="100px">
         <h2>{i18n.t("Hello")}</h2>
-      </RoundContent>
+      </Box>
       <h1>{i18n.t("Introduction")}</h1>
       <article>
         <section>
@@ -21,13 +22,16 @@ const Main = () => {
         </section>
       </article>
       <aside>Quick links come here</aside>
-      <RoundContent
-        style={{ marginTop: "50%" }}
+      <Box
+        style={{
+          marginTop: "50%",
+        }}
         bgColor="#B22222"
         radius="150px"
+        fill
       >
-        <h2>{i18n.t("Sudarshan")}</h2>
-      </RoundContent>
+        <img src={girlimage} alt="girl" />
+      </Box>
     </div>
   );
 };

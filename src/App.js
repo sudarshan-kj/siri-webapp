@@ -4,7 +4,7 @@ import Main from "components/Main";
 import Footer from "components/Footer";
 import styles from "App.module.css";
 import { getLanguageObject, langLocalStorageKey } from "components/Language";
-import RoundContent from "components/generic/RoundContent";
+import Box from "components/generic/Box";
 import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
 import BackToTop from "react-back-to-top-button";
@@ -37,9 +37,9 @@ const App = () => {
       <Main />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
-        <RoundContent radius="35px" bgColor="#C8C8C8">
+        <Box round radius="35px" bgColor="#C8C8C8">
           <BackToTopIcon className={styles.backToTopIcon} />
-        </RoundContent>
+        </Box>
       </BackToTop>
     </div>
   );

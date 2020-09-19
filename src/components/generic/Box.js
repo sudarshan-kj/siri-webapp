@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./RoundContent.module.css";
+import styles from "./Box.module.css";
 
-const RoundContent = ({ children, bgColor, radius, fill, style }) => {
+const Box = ({ children, bgColor, radius, fill, style, round }) => {
+  let fillShape = round ? { borderRadius: "50%" } : null;
   let fillAttr = fill ? { padding: 0 } : { padding: "3px" };
   return (
     <div
@@ -10,13 +11,14 @@ const RoundContent = ({ children, bgColor, radius, fill, style }) => {
         height: radius,
         width: radius,
         ...fillAttr,
+        ...fillShape,
         ...style,
       }}
-      className={styles.defaultRoundContainer}
+      className={styles.defaultBox}
     >
       {children}
     </div>
   );
 };
 
-export default RoundContent;
+export default Box;
