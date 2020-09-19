@@ -5,6 +5,11 @@ import Box from "components/generic/Box";
 import girlimage from "assets/avatars/girl.jpg";
 
 const Main = () => {
+  const [loading, setLoading] = React.useState(true);
+  const imageLoaded = () => {
+    setLoading(false);
+  };
+
   return (
     <div className={styles.main}>
       <Box round bgColor="#B22222" radius="100px">
@@ -26,11 +31,20 @@ const Main = () => {
         style={{
           marginTop: "50%",
         }}
-        bgColor="#B22222"
-        radius="150px"
+        bgColor="rgb(178, 34, 34,0.5)"
+        radius="120px"
         round
+        showLoading
+        isLoading={loading}
       >
-        <img src={girlimage} alt="girl" />
+        <img
+          style={{
+            display: loading ? "none" : "block",
+          }}
+          src={girlimage}
+          alt="girlImage"
+          onLoad={imageLoaded}
+        />
       </Box>
     </div>
   );
