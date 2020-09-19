@@ -5,6 +5,8 @@ import Navigation from "components/Navigation";
 import LanguageButton from "components/Language";
 import i18n from "utils/i18n";
 
+import Slider from "components/generic/animations/Slider";
+
 const Header = ({ selectedLanguage, onToggleLanguage }) => {
   /* Its important to keep the list inside the Header component, else language will not be changed 
   on every render, rather one would have to refresh the page altogether*/

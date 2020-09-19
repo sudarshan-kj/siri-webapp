@@ -1,0 +1,18 @@
+.slider {
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  /*Making the below right:0 will start the slider from right */
+  background: #b22222;
+  z-index: 1;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

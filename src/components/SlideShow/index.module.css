@@ -63,6 +63,7 @@
   width: 100%;
   height: 100%;
   background: #00000050;
+
   animation: fadeOutImg 0.5s forwards;
 }
 
@@ -75,6 +76,8 @@
   padding: 10px;
   background: #0000007a;
 }
+
+/* Refer: https://stackoverflow.com/questions/2837440/css-border-left-50-height/#answer-21338562 to know an alternative */
 
 @media screen and (hover: hover) {
   .nextArrowContainer,
@@ -102,6 +105,15 @@
 
   .bgContainer:hover .tint {
     animation: fadeInImg 0.5s forwards;
+  }
+}
+
+@keyframes slider {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 
