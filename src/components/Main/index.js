@@ -28,7 +28,7 @@ const Main = () => {
         }}
         bgColor="#B22222"
         radius="150px"
-        fill
+        round
       >
         <img src={girlimage} alt="girl" />
       </Box>
