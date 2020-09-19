@@ -13,8 +13,7 @@ const Navigation = ({ list }) => {
               activeClass="active"
               to={item.link}
               smooth={true}
-              offset={50}
-              duration={300}
+              duration={500}
             >
               {item.name}
             </Link>
