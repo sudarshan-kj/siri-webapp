@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./RoundContent.module.css";
 
-const RoundContent = ({ children, bgColor, radius, fill }) => {
+const RoundContent = ({ children, bgColor, radius, fill, style }) => {
   let fillAttr = fill ? { padding: 0 } : { padding: "3px" };
   return (
     <div
@@ -10,8 +10,9 @@ const RoundContent = ({ children, bgColor, radius, fill }) => {
         height: radius,
         width: radius,
         ...fillAttr,
+        ...style,
       }}
-      className={styles.roundContainer}
+      className={styles.defaultRoundContainer}
     >
       {children}
     </div>

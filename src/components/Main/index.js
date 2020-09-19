@@ -21,6 +21,13 @@ const Main = () => {
         </section>
       </article>
       <aside>Quick links come here</aside>
+      <RoundContent
+        style={{ marginTop: "50%" }}
+        bgColor="#B22222"
+        radius="150px"
+      >
+        <h2>{i18n.t("Sudarshan")}</h2>
+      </RoundContent>
     </div>
   );
 };
