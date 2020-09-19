@@ -17,13 +17,16 @@ const Header = ({ selectedLanguage, onToggleLanguage }) => {
   ];
 
   return (
-    <div className={styles.header}>
-      <Logo />
-      <Navigation list={list} />
-      <LanguageButton
-        selectedLanguage={selectedLanguage}
-        onToggleLanguage={onToggleLanguage}
-      />
+    <div className={styles.headerContainer}>
+      <div className={styles.header}>
+        <Logo />
+        <Navigation list={list} />
+        <LanguageButton
+          selectedLanguage={selectedLanguage}
+          onToggleLanguage={onToggleLanguage}
+        />
+        <Slider color="#b22222" direction="left" duration={1000} />
+      </div>
     </div>
   );
 };

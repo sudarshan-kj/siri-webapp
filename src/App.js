@@ -10,7 +10,6 @@ import usePersistence from "hooks/usePersistence";
 import BackToTop from "react-back-to-top-button";
 import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
-import Slider from "components/generic/animations/Slider";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -42,7 +41,6 @@ const App = () => {
           <BackToTopIcon className={styles.backToTopIcon} />
         </RoundContent>
       </BackToTop>
-      <Slider color="#b22222" direction="left" duration={1000} />
     </div>
   );
 };
