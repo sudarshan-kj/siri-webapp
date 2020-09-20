@@ -4,13 +4,6 @@
   flex: 8;
 }
 
-.logoContainer h3 {
-  font-size: 2rem;
-  letter-spacing: 0.3em;
-  color: #054691;
-  margin: 0;
-}
-
 .logo {
   margin: 0.5rem;
   height: 4rem;

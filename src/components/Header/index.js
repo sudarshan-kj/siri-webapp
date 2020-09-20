@@ -6,6 +6,7 @@ import LanguageButton from "components/Language";
 import i18n from "utils/i18n";
 
 import Slider from "components/generic/animations/Slider";
+import { Element } from "react-scroll";
 
 const Header = ({ selectedLanguage, onToggleLanguage }) => {
   /* Its important to keep the list inside the Header component, else language will not be changed 
@@ -17,7 +18,7 @@ const Header = ({ selectedLanguage, onToggleLanguage }) => {
   ];
 
   return (
-    <div className={styles.headerContainer}>
+    <Element name="homeContainer" className={styles.headerContainer}>
       <div className={styles.header}>
         <Logo />
         <Navigation list={list} />
@@ -27,7 +28,7 @@ const Header = ({ selectedLanguage, onToggleLanguage }) => {
         />
         <Slider color="#b22222" direction="left" duration={1000} />
       </div>
-    </div>
+    </Element>
   );
 };
 

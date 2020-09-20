@@ -33,7 +33,7 @@ const Logo = () => {
         style={{ cursor: "pointer" }}
         smooth={true}
         duration={500}
-        to="footerContainer"
+        to="aboutContainer"
       >
         {langLogo}
       </Link>

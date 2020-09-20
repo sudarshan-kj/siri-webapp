@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
+import { Element } from "react-scroll";
 import Box from "components/generic/Box";
 import girlimage from "assets/avatars/girl.jpg";
 
@@ -11,7 +12,7 @@ const Main = () => {
   };
 
   return (
-    <div className={styles.main}>
+    <Element name="aboutContainer" className={styles.main}>
       <Box round bgColor="#B22222" radius="100px">
         <h2>{i18n.t("Hello")}</h2>
       </Box>
@@ -46,7 +47,7 @@ const Main = () => {
           onLoad={imageLoaded}
         />
       </Box>
-    </div>
+    </Element>
   );
 };
 

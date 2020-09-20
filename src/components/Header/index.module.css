@@ -1,9 +1,7 @@
 .headerContainer {
-  position: sticky;
-  top: 0;
   /*You could set z-index: 1 too but since the nav button on the slideshow are absolute positioned elements, they would overlap on the header
   when the page is scorlled down. Figured that the min req z-index to prevent that is 11 */
-  z-index: 11;
+  height: 84px;
   /*Removing z-index will create a nice effect where the header disappears till the image is scrolled past and then reappears again. */
 }
 
@@ -14,6 +12,10 @@
   align-items: center;
   padding: 0 5vw 0 5vw;
   box-shadow: 0 2px 20px 1px rgb(0, 0, 0, 0.5);
+  z-index: 11;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 960px) {
