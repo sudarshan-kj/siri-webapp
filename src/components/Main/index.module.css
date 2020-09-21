@@ -6,6 +6,55 @@
   animation: fadein 2.3s;
 }
 
+hr {
+  width: 100%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.foundersListContainer {
+  color: rgb(116, 116, 116);
+}
+
+.founderContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.founderContainer p {
+  margin: 0;
+  text-align: center;
+}
+
+.contactUsContainer {
+  margin: 10rem 0 0;
+  color: rgb(116, 116, 116);
+}
+
+.foundersListContainer {
+  margin: 10rem 0 0;
+}
+
+.foundersAvatarList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.frame {
+  width: 100%;
+  height: 200px;
+  border-radius: 2%;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -17,10 +66,6 @@
 
 h1 {
   font-weight: 500;
-}
-
-h2 {
-  color: white;
 }
 
 @media screen and (min-width: 960px) {

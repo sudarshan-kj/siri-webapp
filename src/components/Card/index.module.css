@@ -1,7 +1,7 @@
 .cardContainer {
   box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
   padding: 0%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .s {
   height: 10%;
@@ -20,7 +20,7 @@
 
 .xl {
   height: 75%;
-  widows: 75%;
+  width: 75%;
 }
 
 .max {
