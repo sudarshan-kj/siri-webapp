@@ -6,8 +6,9 @@ nav {
 by flex and hovering on the empty space to the right of the menu icon brings down the menu, which is not our desired requirement */
 
 .dropdown {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
+  height: 84px;
 }
 
 .dropbtn {
@@ -15,32 +16,41 @@ by flex and hovering on the empty space to the right of the menu icon brings dow
   padding: 0;
   /*this width is necesary. Otherwise, svg will not have a defined width limit and hence the parent 'dropdown' container will end up taking no space.
   Having a fixed unit is necessary here*/
-  height: 30px;
+  height: 22px;
   width: 70px;
 }
 
 .dropdownContent {
   display: none;
-  position: absolute;
-  left: 15px;
-  width: 160%;
+  position: fixed;
+  justify-content: center;
+  left: 0;
+  right: 0;
   background-color: #f1f1f1;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s forwards;
 }
 
-.dropdown:active .dropdownContent {
-  display: block;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.95;
+  }
 }
 
 .dropdownContent a {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdownContent a:hover {
-  background-color: rgb(5, 70, 145, 0.9);
+.dropdownContent a:active {
+  background-color: #b2222273;
   color: #fff;
 }
 
