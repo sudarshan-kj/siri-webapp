@@ -3,13 +3,9 @@ import styles from "./index.module.css";
 import SlideShow from "components/SlideShow";
 import { Element } from "react-scroll";
 
-const Card = ({ size }) => {
+const Card = ({ size, children }) => {
   return (
-    <div className={`${styles.cardContainer} ${styles[size]}`}>
-      <Element name="headerContainer">
-        <SlideShow />
-      </Element>
-    </div>
+    <div className={`${styles.cardContainer} ${styles[size]}`}>{children}</div>
   );
 };
 

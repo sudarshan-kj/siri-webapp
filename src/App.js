@@ -10,6 +10,7 @@ import usePersistence from "hooks/usePersistence";
 import BackToTop from "react-back-to-top-button";
 import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
+import Slideshow from "components/SlideShow";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,9 @@ const App = () => {
   return (
     <div className={styles.wrapper}>
       <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
-      <Card size="max" />
+      <Card size="max">
+        <Slideshow />
+      </Card>
       <Main />
       <Footer />
       <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
