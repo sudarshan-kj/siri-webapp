@@ -1,0 +1,16 @@
+.container {
+  position: fixed;
+  top: 60%;
+  left: 0;
+}
+
+.fbIcon {
+  margin-left: 1rem;
+  height: 40px;
+  width: 40px;
+  fill: #131313;
+}
+
+a:hover .fbIcon {
+  fill: #3b5998;
+}

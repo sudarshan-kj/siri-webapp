@@ -11,6 +11,7 @@ import BackToTop from "react-back-to-top-button";
 import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
 import Slideshow from "components/SlideShow";
+import Social from "components/Social";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ const App = () => {
           <BackToTopIcon className={styles.backToTopIcon} />
         </Box>
       </BackToTop>
+      <Social />
     </div>
   );
 };
