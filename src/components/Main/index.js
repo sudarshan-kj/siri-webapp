@@ -15,17 +15,9 @@ const Main = () => {
 
   return (
     <Element name="aboutContainer" className={styles.main}>
-      <div className={styles.testContainer}>
-        <Box round bgColor="#B22222" radius="200px">
-          <h2>{i18n.t("Hello Pooja 🙏")}</h2>
-        </Box>
-      </div>
       <div className={styles.introContainer}>
         <Box round bgColor="#B22222" radius="100px">
           <h2>{i18n.t("Hello")}</h2>
-        </Box>
-        <Box round bgColor="#B22222" radius="100px">
-          <h2>{i18n.t("Pooja")}</h2>
         </Box>
         <h1>{i18n.t("Introduction")}</h1>
       </div>
