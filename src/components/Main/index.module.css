@@ -6,6 +6,11 @@
   animation: fadein 2.3s;
 }
 
+h1 {
+  font-size: 1.2rem;
+  color: rgb(116, 116, 116);
+}
+
 .introContainer h2 {
   color: white;
 }
@@ -19,10 +24,6 @@ hr {
   border: 0 none;
 }
 
-.foundersListContainer {
-  color: rgb(116, 116, 116);
-}
-
 .founderContainer {
   display: flex;
   flex-flow: column wrap;
@@ -34,9 +35,10 @@ hr {
   text-align: center;
 }
 
-.contactUsContainer {
-  margin: 10rem 0 0;
-  color: rgb(116, 116, 116);
+.horizontalDivider {
+  display: flex;
+  align-items: center;
+  height: 150px;
 }
 
 .foundersListContainer {
@@ -48,15 +50,9 @@ hr {
   justify-content: space-around;
 }
 
-.cardContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.frame {
-  width: 100%;
-  height: 200px;
-  border-radius: 2%;
+.contactContentContainer {
+  width: 80%;
+  margin: 5rem auto;
 }
 
 @keyframes fadein {
@@ -66,10 +62,6 @@ hr {
   to {
     opacity: 1;
   }
-}
-
-h1 {
-  font-weight: 500;
 }
 
 @media screen and (min-width: 960px) {

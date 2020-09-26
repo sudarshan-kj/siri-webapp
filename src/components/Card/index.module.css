@@ -1,5 +1,4 @@
 .cardContainer {
-  box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
   padding: 0%;
   border-radius: 8px;
 }
@@ -25,6 +24,7 @@
 
 .max {
   height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 960px) {

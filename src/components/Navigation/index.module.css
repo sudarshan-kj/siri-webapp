@@ -68,7 +68,7 @@ prevent <a> elements from having hover just under the text width they are define
 since otherwise the on hover effect of <a>  would be applicable to the fixed of parent li*/
 
 nav ul a {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
