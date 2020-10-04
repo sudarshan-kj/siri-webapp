@@ -75,6 +75,7 @@ const Navigation = ({ list }) => {
         >
           {list.map((item, id) => (
             <Link
+              key={id}
               activeClass="active"
               to={item.link}
               smooth={true}

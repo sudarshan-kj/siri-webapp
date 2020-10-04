@@ -50,6 +50,25 @@ hr {
   justify-content: space-around;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.slideIn {
+  visibility: visible;
+  animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .contactContentContainer {
   width: 80%;
   margin: 5rem auto;

@@ -1,4 +1,10 @@
 .container {
+  visibility: hidden;
+}
+
+.slideIn {
+  visibility: visible;
+  animation: slideIn 1s;
 }
 
 .icon {
@@ -33,4 +39,14 @@
 
 .socialContainer p {
   margin-right: 0.5rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(50px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
