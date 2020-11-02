@@ -7,9 +7,9 @@ import { getLanguageObject, langLocalStorageKey } from "components/Language";
 import Box from "components/generic/Box";
 import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
-import BackToTop from "react-back-to-top-button";
 import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
+import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";
 
 const App = () => {
@@ -39,11 +39,11 @@ const App = () => {
       </Card>
       <Main />
       <Footer />
-      <BackToTop showAt={200} speed={1000} style={{ marginRight: "1%" }}>
+      <ScrollToTop showUnder={250}>
         <Box round radius="35px" bgColor="#C8C8C8">
           <BackToTopIcon className={styles.backToTopIcon} />
         </Box>
-      </BackToTop>
+      </ScrollToTop>
     </div>
   );
 };
