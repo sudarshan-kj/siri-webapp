@@ -11,6 +11,8 @@ import { ReactComponent as BackToTopIcon } from "assets/top.svg";
 import Card from "components/Card";
 import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";
+import Categories from "components/Categories";
+import { Switch, Route } from "react-router-dom";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -34,10 +36,23 @@ const App = () => {
   return (
     <div className={styles.wrapper}>
       <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
-      <Card size="max">
-        <Slideshow />
-      </Card>
-      <Main />
+      <Switch>
+        <Route exact path="/">
+          <Card size="max">
+            <Slideshow />
+          </Card>
+          <Main />
+        </Route>
+        <Route path="/categories">
+          <Categories />
+        </Route>
+        <Route path="/home">
+          <Card size="max">
+            <Slideshow />
+          </Card>
+          <Main />
+        </Route>
+      </Switch>
       <Footer />
       <ScrollToTop showUnder={250}>
         <Box round radius="35px" bgColor="#C8C8C8">

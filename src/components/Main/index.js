@@ -6,6 +6,7 @@ import Box from "components/generic/Box";
 import drVeeren from "assets/avatars/drVeeren.jpg";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const [loading, setLoading] = React.useState(true);
@@ -24,6 +25,7 @@ const Main = () => {
       <div>
         <article>
           <section>
+            <Link to="/categories">Test me</Link>
             <h3>Section 1</h3>
             <p>This is section 1 paragraph</p>
           </section>
