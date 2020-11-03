@@ -43,14 +43,14 @@ const App = () => {
           </Card>
           <Main />
         </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
         <Route path="/home">
           <Card size="max">
             <Slideshow />
           </Card>
           <Main />
+        </Route>
+        <Route path="/categories">
+          <Categories />
         </Route>
       </Switch>
       <Footer />
