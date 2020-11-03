@@ -1,9 +1,6 @@
-let context = require.context("./", true, /\.(png|jpe?g)$/i);
+function importAll(r) {
+  return r.keys().map(r);
+}
+const images = importAll(require.context("./", false, /\.(png|jpe?g|svg)$/));
 
-let files = [];
-
-context.keys().forEach((filename) => {
-  files.push(context(filename));
-});
-
-export default files;
+export default images;
