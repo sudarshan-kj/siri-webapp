@@ -50,7 +50,7 @@ const App = () => {
           <Main />
         </Route>
         <Route path="/categories">
-          <Categories />
+          <Categories lang={language} />
         </Route>
       </Switch>
       <Footer />

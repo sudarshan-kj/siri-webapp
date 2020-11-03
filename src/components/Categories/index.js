@@ -1,26 +1,16 @@
 import React from "react";
 import styles from "./Category.module.css";
 import Card from "components/Card";
-import sampleImage from "assets/slides/bulb.jpg";
+import images from "assets/slides";
+import i18n from "utils/i18n";
+import { v4 as uuidv4 } from "uuid";
 
-const cardData = [
-  { image: sampleImage, heading: "Agarbatti" },
-  { image: sampleImage, heading: "Detergents" },
-  { image: sampleImage, heading: "Phenyls" },
-  { image: sampleImage, heading: "Garments" },
-  { image: sampleImage, heading: "Rexin" },
-  { image: sampleImage, heading: "Pickles" },
-  { image: sampleImage, heading: "Bleaching powder" },
-  { image: sampleImage, heading: "Millets" },
-  { image: sampleImage, heading: "Millet Cafe" },
-  { image: sampleImage, heading: "Pushti" },
-];
-
-const Categories = () => {
+const Categories = ({ lang }) => {
+  const cardData = i18n.t("Categories", { returnObjects: true });
   return (
     <div className={styles.container}>
-      {cardData.map((item) => {
-        return <ImageCard heading={item.heading} />;
+      {cardData.map((item, index) => {
+        return <ImageCard key={uuidv4()} heading={item} />;
       })}
     </div>
   );
@@ -30,7 +20,7 @@ const ImageCard = ({ heading, image, content }) => {
   return (
     <Card>
       <div className={styles.cardImage}>
-        <img src={sampleImage} />
+        <img src={images[0]} />
       </div>
       <h1>{heading}</h1>
     </Card>
