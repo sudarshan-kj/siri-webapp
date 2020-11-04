@@ -6,5 +6,13 @@
   "About": "About",
   "Contact": "Contact",
   "Founders": "Founders",
-  "Categories": ["Agarbattis", "Phenyls", "Millets", "Millet Cafe", "Bleacing Powder", "Pickle", "Garments", "Rexins", "Pushti","Kokum Juice"]
+  "Categories": [{"id": 0, "name": "Agarbattis"}, 
+    {"id": 1, "name": "Phenyls" }, 
+    {"id": 2, "name": "Millets"}, 
+    {"id": 3, "name": "Millet Cafe"}, 
+    {"id": 4, "name": "Bleacing Powder"}, {"id": 5, "name": "Pickle"}, 
+    {"id": 6, "name": "Garments" }, 
+    {"id": 7, "name": "Rexins"},
+    {"id": 8, "name": "Pushti"},
+    {"id": 9, "name": "Kokum Juice"}]
 }

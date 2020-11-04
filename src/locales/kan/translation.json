@@ -6,5 +6,13 @@
   "About": "ನಮ್ಮ ಬಗ್ಗೆ",
   "Contact": "ಸಂಪರ್ಕ",
   "Founders": "ಸ್ಥಾಪಕರು",
-  "Categories": ["ಅಗರಬಟ್ಟಿ", "ಅಗರಬಟ್ಟಿ", "ಅಗರಬಟ್ಟಿ", "Millet ಅಗರಬಟ್ಟಿ", "Bleacing Powder", "Pickle", "Garments", "Rexins", "Pushti","Kokum Juice"]
+  "Categories": [{"id": 0, "name": "ಅಗರಬಟ್ಟಿ"}, 
+    {"id": 1, "name": "ಅಗರಬಟ್ಟಿ" }, 
+    {"id": 2, "name": "Millets"}, 
+    {"id": 3, "name": "Millet Cafe"}, 
+    {"id": 4, "name": "Bleacing Powder"}, {"id": 5, "name": "Pickle"}, 
+    {"id": 6, "name": "Garments" }, 
+    {"id": 7, "name": "Rexins"},
+    {"id": 8, "name": "Pushti"},
+    {"id": 9, "name": "Kokum Juice"}]
 }

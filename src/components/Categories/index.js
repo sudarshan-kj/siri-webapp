@@ -3,14 +3,13 @@ import styles from "./Category.module.css";
 import Card from "components/Card";
 import images from "assets/slides";
 import i18n from "utils/i18n";
-import { v4 as uuidv4 } from "uuid";
 
-const Categories = ({ lang }) => {
+const Categories = () => {
   const cardData = i18n.t("Categories", { returnObjects: true });
   return (
     <div className={styles.container}>
-      {cardData.map((item, index) => {
-        return <ImageCard key={uuidv4()} heading={item} />;
+      {cardData.map((item) => {
+        return <ImageCard key={item.id} heading={item.name} />;
       })}
     </div>
   );
