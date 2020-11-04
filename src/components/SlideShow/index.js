@@ -5,6 +5,7 @@ import images from "assets/slides";
 import { css } from "@emotion/core";
 import PulseLoader from "react-spinners/PulseLoader";
 import styles from "./index.module.css";
+import i18n from "utils/i18n";
 import { ReactComponent as Arrow } from "assets/left-arrow.svg";
 
 const Slideshow = () => {
@@ -18,6 +19,8 @@ const Slideshow = () => {
   const imageLoaded = () => {
     setLoading(false);
   };
+
+  const Categories = i18n.t("Categories", { returnObjects: true });
 
   return (
     <div>
@@ -55,16 +58,19 @@ const Slideshow = () => {
         transitionDuration={500}
       >
         {images.map((image) => {
-          return (
-            <div className={styles.eachSlide}>
-              <div className={styles.bgContainer}>
-                <img src={image} alt="fornow" onLoad={imageLoaded} />
-                <span className={styles.tint}>
-                  <h1>Empowering rural youth</h1>
-                </span>
+          if (Categories)
+            return (
+              <div className={styles.eachSlide}>
+                <div className={styles.bgContainer}>
+                  <img src={image.path} alt="fornow" onLoad={imageLoaded} />
+                  <span className={styles.tint}>
+                    {Categories[image.key] && (
+                      <h1>{Categories[image.key].description}</h1>
+                    )}
+                  </span>
+                </div>
               </div>
-            </div>
-          );
+            );
         })}
       </Slide>
     </div>

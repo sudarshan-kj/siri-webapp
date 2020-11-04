@@ -74,6 +74,7 @@
   width: 100%;
   padding: 50% 0 50% 0;
   background: #0000007a;
+  font-size: 2.5rem;
 }
 
 /* Refer: https://stackoverflow.com/questions/2837440/css-border-left-50-height/#answer-21338562 to know an alternative */

@@ -5,11 +5,18 @@ import images from "assets/slides";
 import i18n from "utils/i18n";
 
 const Categories = () => {
-  const cardData = i18n.t("Categories", { returnObjects: true });
+  const categories = i18n.t("Categories", { returnObjects: true });
   return (
     <div className={styles.container}>
-      {cardData.map((item) => {
-        return <ImageCard key={item.id} heading={item.name} />;
+      {images.map((image) => {
+        if (categories[image.key])
+          return (
+            <ImageCard
+              key={image.key}
+              image={image.path}
+              heading={categories[image.key].description}
+            />
+          );
       })}
     </div>
   );
@@ -19,7 +26,7 @@ const ImageCard = ({ heading, image, content }) => {
   return (
     <Card>
       <div className={styles.cardImage}>
-        <img src={images[0]} />
+        <img src={image} />
       </div>
       <h1>{heading}</h1>
     </Card>

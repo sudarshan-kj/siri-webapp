@@ -6,13 +6,11 @@
   "About": "ನಮ್ಮ ಬಗ್ಗೆ",
   "Contact": "ಸಂಪರ್ಕ",
   "Founders": "ಸ್ಥಾಪಕರು",
-  "Categories": [{"id": 0, "name": "ಅಗರಬಟ್ಟಿ"}, 
-    {"id": 1, "name": "ಅಗರಬಟ್ಟಿ" }, 
-    {"id": 2, "name": "Millets"}, 
-    {"id": 3, "name": "Millet Cafe"}, 
-    {"id": 4, "name": "Bleacing Powder"}, {"id": 5, "name": "Pickle"}, 
-    {"id": 6, "name": "Garments" }, 
-    {"id": 7, "name": "Rexins"},
-    {"id": 8, "name": "Pushti"},
-    {"id": 9, "name": "Kokum Juice"}]
+  "Categories": {
+    "kokum": { "description": "ಸ್ಥಾಪಕರು juice manufacturing", "name": "ಸ್ಥಾಪಕರು Juice" },
+    "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
+    "phenyls": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
+    "garments": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
+    "oilfry": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "Siri ಸ್ಥಾಪಕರು" }
+  }
 }
