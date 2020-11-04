@@ -13,7 +13,7 @@ import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";
 import Categories from "components/Categories";
 import { Switch, Route } from "react-router-dom";
-import Banner from "components/Banner";
+import ProductList from "components/ProductList";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -46,9 +46,8 @@ const App = () => {
         </Route>
         <Route path="/home">
           <Card size="max" noShadow>
-            <Banner />
+            <ProductList />
           </Card>
-          <Main />
         </Route>
         <Route path="/categories">
           <Categories />
