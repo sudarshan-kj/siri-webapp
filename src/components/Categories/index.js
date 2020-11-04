@@ -6,6 +6,10 @@ import i18n from "utils/i18n";
 
 const Categories = () => {
   const categories = i18n.t("Categories", { returnObjects: true });
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.container}>
       {images.map((image) => {
