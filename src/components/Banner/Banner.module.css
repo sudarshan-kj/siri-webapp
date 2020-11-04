@@ -1,0 +1,36 @@
+.contentContainer {
+  display: flex;
+}
+
+.imageContainer {
+  flex: 8;
+  height: 30vh;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.textContainer h1 {
+  font-size: 1rem;
+}
+
+.contentContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  .textContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+}

@@ -60,9 +60,7 @@ const Slideshow = () => {
               <div className={styles.bgContainer}>
                 <img src={image} alt="fornow" onLoad={imageLoaded} />
                 <span className={styles.tint}>
-                  <p>
-                    This is Sudarshan KJ and he is going to be the best ever!
-                  </p>
+                  <h1>Empowering rural youth</h1>
                 </span>
               </div>
             </div>
