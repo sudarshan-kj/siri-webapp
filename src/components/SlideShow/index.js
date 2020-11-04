@@ -58,19 +58,18 @@ const Slideshow = () => {
         transitionDuration={500}
       >
         {images.map((image) => {
-          if (Categories)
-            return (
-              <div className={styles.eachSlide}>
-                <div className={styles.bgContainer}>
-                  <img src={image.path} alt="fornow" onLoad={imageLoaded} />
-                  <span className={styles.tint}>
-                    {Categories[image.key] && (
-                      <h1>{Categories[image.key].description}</h1>
-                    )}
-                  </span>
-                </div>
+          return (
+            <div className={styles.eachSlide}>
+              <div className={styles.bgContainer}>
+                <img src={image.path} alt="fornow" onLoad={imageLoaded} />
+                <span className={styles.tint}>
+                  {Categories[image.key] && (
+                    <h1>{Categories[image.key].description}</h1>
+                  )}
+                </span>
               </div>
-            );
+            </div>
+          );
         })}
       </Slide>
     </div>

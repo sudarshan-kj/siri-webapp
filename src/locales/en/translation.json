@@ -11,6 +11,12 @@
     "snacks": { "description": "Snacks manufacturing", "name": "Snacks" },
     "phenyls": { "description": "Phenyl manufacturing", "name": "Phenyls" },
     "garments": { "description": "Garments manufacturing", "name": "Garments" },
-    "oilfry": { "description": "Siri Shop Display", "name": "Siri Shop" }
+    "tailoring": { "description": "Handmade tailoring", "name": "Tailoring" },
+    "oilfry": { "description": "Snacks manufacturing 2", "name": "Siri Snacks" },
+    "pushti": { "description": "Pushti manufacturing", "name": "Pushti" },
+    "rexin": { "description": "Rexin manufacturing", "name": "Rexin" },
+    "cafe": { "description": "Siri Millet cafe", "name": "Siri Cafe" },
+    "shop": { "description": "Siri Shop Display", "name": "Siri Shop" },
+    "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti" }
   }
 }

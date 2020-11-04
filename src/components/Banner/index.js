@@ -11,7 +11,7 @@ const Banner = () => {
         </h1>
       </div>
       <div className={styles.imageContainer}>
-        <img src={images[0]} alt="image" />
+        <img src={images[0]} alt="nice" />
       </div>
     </div>
   );

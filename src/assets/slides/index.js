@@ -20,6 +20,16 @@ function enrichFiles(files) {
       enrichedFiles.push(new Image(file, "phenyl"));
     } else if (file.includes("sirishop")) {
       enrichedFiles.push(new Image(file, "sirishop"));
+    } else if (file.includes("agarbatti")) {
+      enrichedFiles.push(new Image(file, "agarbatti"));
+    } else if (file.includes("pushti")) {
+      enrichedFiles.push(new Image(file, "pushti"));
+    } else if (file.includes("shop")) {
+      enrichedFiles.push(new Image(file, "shop"));
+    } else if (file.includes("cafe")) {
+      enrichedFiles.push(new Image(file, "cafe"));
+    } else if (file.includes("rexin")) {
+      enrichedFiles.push(new Image(file, "rexin"));
     }
   });
   return enrichedFiles;

@@ -14,19 +14,20 @@ const Categories = () => {
             <ImageCard
               key={image.key}
               image={image.path}
-              heading={categories[image.key].description}
+              heading={categories[image.key].name}
             />
           );
+        return null;
       })}
     </div>
   );
 };
 
-const ImageCard = ({ heading, image, content }) => {
+const ImageCard = ({ heading, image }) => {
   return (
     <Card>
       <div className={styles.cardImage}>
-        <img src={image} />
+        <img src={image} alt={heading} />
       </div>
       <h1>{heading}</h1>
     </Card>
