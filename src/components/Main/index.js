@@ -25,7 +25,7 @@ const Main = () => {
       <div>
         <article>
           <section>
-            <Link to="/categories">Test me</Link>
+            <Link to="/categories">Categories</Link>
             <h3>Section 1</h3>
             <p>This is section 1 paragraph</p>
           </section>

@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./contact.module.css";
 import Card from "components/Card";
-import { ReactComponent as PhoneIcon } from "assets/icons/phone.svg";
-import { ReactComponent as EmailIcon } from "assets/icons/email.svg";
-import { ReactComponent as LocationIcon } from "assets/icons/location.svg";
+import { ReactComponent as PhoneIcon } from "assets/icons/contact/phone.svg";
+import { ReactComponent as EmailIcon } from "assets/icons/contact/email.svg";
+import { ReactComponent as LocationIcon } from "assets/icons/contact/location.svg";
 import i18n from "utils/i18n";
 import Social from "components/Social";
 

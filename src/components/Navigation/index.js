@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { ReactComponent as MenuIcon } from "assets/icons/dropdown.svg";
+import { ReactComponent as MenuIcon } from "assets/icons/common/dropdown.svg";
 import { Link } from "react-scroll";
 
 const Navigation = ({ list }) => {

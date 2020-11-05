@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Social.module.css";
-import { ReactComponent as FacebookIcon } from "assets/icons/fb.svg";
+import { ReactComponent as FacebookIcon } from "assets/icons/social/fb.svg";
 
 const Social = () => {
   return (

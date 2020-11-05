@@ -6,7 +6,7 @@ import { css } from "@emotion/core";
 import PulseLoader from "react-spinners/PulseLoader";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
-import { ReactComponent as Arrow } from "assets/icons/left-arrow.svg";
+import { ReactComponent as Arrow } from "assets/icons/common/left-arrow.svg";
 
 const Slideshow = () => {
   const [loading, setLoading] = useState(true);

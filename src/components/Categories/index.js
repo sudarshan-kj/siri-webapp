@@ -15,7 +15,7 @@ const Categories = () => {
       {images.map((image) => {
         if (categories[image.key])
           return (
-            <ImageCard
+            <IconCard
               key={image.key}
               image={image.path}
               heading={categories[image.key].name}
@@ -27,7 +27,7 @@ const Categories = () => {
   );
 };
 
-const ImageCard = ({ heading, image }) => {
+const IconCard = ({ heading, image }) => {
   return (
     <Card>
       <div className={styles.cardImage}>
