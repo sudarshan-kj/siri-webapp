@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Logo.module.css";
 import { langOptions, getLanguageObject } from "components/Language";
-import LogoIconEng from "assets/logo-eng.png";
-import LogoIconKan from "assets/logo-kan.png";
+import LogoIconEng from "assets/logo/logo-eng.png";
+import LogoIconKan from "assets/logo/logo-kan.png";
 import i18next from "i18next";
 import i18n from "utils/i18n";
 import { Link } from "react-scroll";

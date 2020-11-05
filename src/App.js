@@ -7,7 +7,7 @@ import { getLanguageObject, langLocalStorageKey } from "components/Language";
 import Box from "components/generic/Box";
 import i18next from "i18next";
 import usePersistence from "hooks/usePersistence";
-import { ReactComponent as BackToTopIcon } from "assets/top.svg";
+import { ReactComponent as BackToTopIcon } from "assets/icons/top.svg";
 import Card from "components/Card";
 import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";

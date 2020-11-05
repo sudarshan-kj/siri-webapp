@@ -2,7 +2,7 @@ import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "./index.module.css";
 import Toast from "components/generic/Toast";
-import { ReactComponent as LangIcon } from "assets/lang-icon.svg";
+import { ReactComponent as LangIcon } from "assets/icons/lang-icon.svg";
 
 export const langOptions = {
   ENG: { value: "en", displayName: "English" },
