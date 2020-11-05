@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import { ReactComponent as MenuIcon } from "assets/icons/common/dropdown.svg";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { Link as DOMLink } from "react-router-dom";
 
 const Navigation = ({ list }) => {
@@ -75,7 +75,7 @@ const Navigation = ({ list }) => {
           className={styles.dropdownContent}
         >
           {list.map((item, id) => (
-            <Link
+            <DOMLink
               key={id}
               activeClass="active"
               to={item.link}
@@ -83,7 +83,7 @@ const Navigation = ({ list }) => {
               duration={500}
             >
               {item.name}
-            </Link>
+            </DOMLink>
           ))}
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ProductList.module.css";
 import images from "assets/banners";
-import Card from "components/Card";
 
 const ProductList = () => {
   React.useEffect(() => {
@@ -13,15 +12,15 @@ const ProductList = () => {
       {images.map((image, index) => {
         if (index % 2 === 0)
           return (
-            <Card size="max">
+            <div className={styles.card}>
               <Item heading="Empower me" image={image} flip={true} />
-            </Card>
+            </div>
           );
         else {
           return (
-            <Card size="max">
+            <div className={styles.card}>
               <Item heading="Empower me" image={image} flip={true} />
-            </Card>
+            </div>
           );
         }
       })}

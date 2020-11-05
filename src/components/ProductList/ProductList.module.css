@@ -2,6 +2,13 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
+  animation: fadein 0.7s;
+}
+
+.card {
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
 }
 
 .contentContainer {
@@ -24,8 +31,13 @@
 }
 
 .imageContainer span p {
-  margin: 1rem;
-  font-size: 1.5rem;
+  padding: 3rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 .contentContainer:hover .imageContainer span {
