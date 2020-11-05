@@ -14,6 +14,7 @@ import Slideshow from "components/SlideShow";
 import Categories from "components/Categories";
 import { Switch, Route } from "react-router-dom";
 import ProductList from "components/ProductList";
+import NotFound from "components/404";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -51,6 +52,9 @@ const App = () => {
         </Route>
         <Route path="/categories">
           <Categories />
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
       <Footer />

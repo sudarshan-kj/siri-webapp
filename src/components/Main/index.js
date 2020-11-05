@@ -14,6 +14,10 @@ const Main = () => {
     setLoading(false);
   };
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Element name="aboutContainer" className={styles.main}>
       <div className={styles.introContainer}>

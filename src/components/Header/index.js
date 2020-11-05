@@ -11,10 +11,16 @@ import { Element } from "react-scroll";
 const Header = ({ selectedLanguage, onToggleLanguage }) => {
   /* Its important to keep the list inside the Header component, else language will not be changed 
   on every render, rather one would have to refresh the page altogether*/
+  // const list = [
+  //   { name: i18n.t("Home"), link: "homeContainer" },
+  //   { name: i18n.t("About"), link: "aboutContainer" },
+  //   { name: i18n.t("Contact"), link: "footerContainer" },
+  // ];
+
   const list = [
-    { name: i18n.t("Home"), link: "homeContainer" },
-    { name: i18n.t("About"), link: "aboutContainer" },
-    { name: i18n.t("Contact"), link: "footerContainer" },
+    { name: i18n.t("Home"), link: "/" },
+    { name: i18n.t("About"), link: "/categories" },
+    { name: i18n.t("Contact"), link: "/home" },
   ];
 
   return (

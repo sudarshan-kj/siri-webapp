@@ -4,6 +4,10 @@ import images from "assets/banners";
 import Card from "components/Card";
 
 const ProductList = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.mainContainer}>
       {images.map((image, index) => {

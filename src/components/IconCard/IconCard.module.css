@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  height: 170px;
+  width: 170px;
+}
+
+.container .content {
+  margin: 10px;
+  padding: 10px;
+}
