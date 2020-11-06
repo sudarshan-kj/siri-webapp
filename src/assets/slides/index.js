@@ -3,32 +3,30 @@ function Image(path, key) {
   this.key = key;
 }
 
-function enrichFiles(files) {
+function helperMethod(file, keysArray, array) {
+  for (let i = 0; i < keysArray.length; i++) {
+    if (file.includes(keysArray[i])) {
+      array.push(new Image(file, keysArray[i]));
+    }
+  }
+}
+
+const allCategories = [
+  "kokum",
+  "snacks",
+  "garments",
+  "phenyl",
+  "sirishop",
+  "agarbatti",
+  "pushti",
+  "siricafe",
+  "rexin",
+];
+
+function enrichFiles(files, categoryList) {
   let enrichedFiles = [];
   files.forEach((file) => {
-    if (file.includes("kokum")) {
-      enrichedFiles.push(new Image(file, "kokum"));
-    } else if (file.includes("snacks")) {
-      enrichedFiles.push(new Image(file, "snacks"));
-    } else if (file.includes("garments")) {
-      enrichedFiles.push(new Image(file, "garments"));
-    } else if (file.includes("oilfry")) {
-      enrichedFiles.push(new Image(file, "oilfry"));
-    } else if (file.includes("tailoring")) {
-      enrichedFiles.push(new Image(file, "tailoring"));
-    } else if (file.includes("phenyl")) {
-      enrichedFiles.push(new Image(file, "phenyl"));
-    } else if (file.includes("sirishop")) {
-      enrichedFiles.push(new Image(file, "sirishop"));
-    } else if (file.includes("agarbatti")) {
-      enrichedFiles.push(new Image(file, "agarbatti"));
-    } else if (file.includes("pushti")) {
-      enrichedFiles.push(new Image(file, "pushti"));
-    } else if (file.includes("siricafe")) {
-      enrichedFiles.push(new Image(file, "siricafe"));
-    } else if (file.includes("rexin")) {
-      enrichedFiles.push(new Image(file, "rexin"));
-    }
+    helperMethod(file, categoryList, enrichedFiles);
   });
   return enrichedFiles;
 }
@@ -36,8 +34,8 @@ function enrichFiles(files) {
 function importAll(r) {
   return r.keys().map(r);
 }
-const images = enrichFiles(
-  importAll(require.context("./", false, /\.(png|jpe?g|svg)$/))
-);
 
-export default images;
+export const images = importAll(
+  require.context("./", false, /\.(png|jpe?g|svg)$/)
+);
+export const imageCategories = enrichFiles(images, allCategories);

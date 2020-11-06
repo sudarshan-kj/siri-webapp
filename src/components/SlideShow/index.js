@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
-import images from "assets/slides";
+import { imageCategories } from "assets/slides";
 import { css } from "@emotion/core";
 import PulseLoader from "react-spinners/PulseLoader";
 import styles from "./index.module.css";
@@ -57,7 +57,7 @@ const Slideshow = () => {
         duration={2000}
         transitionDuration={500}
       >
-        {images.map((image) => {
+        {imageCategories.map((image) => {
           return (
             <div className={styles.eachSlide}>
               <div className={styles.bgContainer}>
