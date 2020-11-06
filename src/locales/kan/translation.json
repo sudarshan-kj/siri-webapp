@@ -9,14 +9,14 @@
   "Categories": {
     "kokum": { "description": "ಸ್ಥಾಪಕರು juice manufacturing", "name": "ಸ್ಥಾಪಕರು Juice" },
     "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
-    "phenyls": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
+    "phenyl": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
     "garments": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
     "tailoring": { "description": "Handmade ಸ್ಥಾಪಕರು", "name": "ಸ್ಥಾಪಕರು" },
     "oilfry": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "Siri ಸ್ಥಾಪಕರು" },
     "pushti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
     "rexin": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" },
-    "cafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "Siri ಸ್ಥಾಪಕರು" },
-    "shop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "Siri ಸ್ಥಾಪಕರು" },
+    "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "Siri ಸ್ಥಾಪಕರು" },
+    "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "Siri ಸ್ಥಾಪಕರು" },
     "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಸ್ಥಾಪಕರು" }
     
   }

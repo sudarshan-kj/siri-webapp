@@ -24,10 +24,8 @@ function enrichFiles(files) {
       enrichedFiles.push(new Image(file, "agarbatti"));
     } else if (file.includes("pushti")) {
       enrichedFiles.push(new Image(file, "pushti"));
-    } else if (file.includes("shop")) {
-      enrichedFiles.push(new Image(file, "shop"));
-    } else if (file.includes("cafe")) {
-      enrichedFiles.push(new Image(file, "cafe"));
+    } else if (file.includes("siricafe")) {
+      enrichedFiles.push(new Image(file, "siricafe"));
     } else if (file.includes("rexin")) {
       enrichedFiles.push(new Image(file, "rexin"));
     }
