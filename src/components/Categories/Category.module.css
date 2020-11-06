@@ -8,6 +8,15 @@
   animation: fadein 1s;
 }
 
+.icon {
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .container h1 {
   font-weight: 100;
   text-align: center;
@@ -23,7 +32,7 @@
 
 @media screen and (min-width: 800px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: 900px;
     margin: 3% auto;
   }

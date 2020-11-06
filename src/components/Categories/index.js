@@ -46,12 +46,12 @@ const Categories = () => {
   return (
     <div className={styles.container}>
       {sortedImages.map((image) => {
-        console.log(image.key);
         let MyComponent = components[`${image.key}Icon`];
 
         if (categories[image.key] && MyComponent)
           return (
             <IconCard
+              propStyles={styles.icon}
               Icon={MyComponent}
               key={image.key}
               // image={image.path}
