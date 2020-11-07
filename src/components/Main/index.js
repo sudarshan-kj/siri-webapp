@@ -7,7 +7,7 @@ import drVeeren from "assets/avatars/drVeeren.jpg";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
-
+import Video from "components/Video";
 const Main = () => {
   const [loading, setLoading] = React.useState(true);
   const imageLoaded = () => {
@@ -30,6 +30,7 @@ const Main = () => {
         <article>
           <section>
             <Link to="/categories">Categories</Link>
+
             <h3>Section 1</h3>
             <p>This is section 1 paragraph</p>
           </section>
@@ -39,6 +40,9 @@ const Main = () => {
           </section>
         </article>
         <aside>Quick links come here</aside>
+        <p>
+          <Video />
+        </p>
       </div>
       <div className={styles.horizontalDivider}>
         <hr />

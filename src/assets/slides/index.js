@@ -11,6 +11,8 @@ function helperMethod(file, keysArray, array) {
   }
 }
 
+// make sure this category matches with the one defined in the locales
+
 const allCategories = [
   "kokum",
   "snacks",
