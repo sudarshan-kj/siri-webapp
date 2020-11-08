@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./ProductList.module.css";
 import images from "assets/banners";
+import useAutoScroll from "hooks/useAutoScroll";
 
 const ProductList = () => {
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useAutoScroll();
 
   return (
     <div className={styles.mainContainer}>

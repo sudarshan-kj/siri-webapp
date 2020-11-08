@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Slider.module.css";
+import styles from "./MovingSlider.module.css";
 
-const Slider = ({ duration, color, direction, style }) => {
+const MovingSlider = ({ duration, color, direction, style }) => {
   const slideRef = React.useRef();
   const appliedDirection = direction === "left" ? { left: 0 } : { right: 0 };
   const customStyle = {
@@ -29,4 +29,4 @@ const Slider = ({ duration, color, direction, style }) => {
   return <div ref={slideRef} style={customStyle} className={styles.slider} />;
 };
 
-export default Slider;
+export default MovingSlider;

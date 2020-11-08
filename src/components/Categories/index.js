@@ -3,6 +3,7 @@ import styles from "./Category.module.css";
 import { imageCategories } from "assets/slides";
 import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
+import useAutoScroll from "hooks/useAutoScroll";
 import { ReactComponent as agarbattiIcon } from "assets/icons/categories/agarbatti.svg";
 import { ReactComponent as siricafeIcon } from "assets/icons/categories/siricafe.svg";
 import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
@@ -38,11 +39,7 @@ let sortedImages = imageCategories.sort(compare);
 
 const Categories = () => {
   const categories = i18n.t("Categories", { returnObjects: true });
-
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  useAutoScroll();
   return (
     <div className={styles.container}>
       {sortedImages.map((image) => {

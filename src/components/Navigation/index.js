@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import { ReactComponent as MenuIcon } from "assets/icons/common/dropdown.svg";
-// import { Link } from "react-scroll";
-import { Link as DOMLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = ({ list }) => {
   const [dropDownVisibility, setDropDownVisibility] = React.useState("none");
@@ -51,14 +50,7 @@ const Navigation = ({ list }) => {
       <ul>
         {list.map((item, id) => (
           <li key={id}>
-            <DOMLink
-              activeClass="active"
-              to={item.link}
-              smooth={true}
-              duration={500}
-            >
-              {item.name}
-            </DOMLink>
+            <Link to={item.link}>{item.name}</Link>
           </li>
         ))}
       </ul>
@@ -75,15 +67,7 @@ const Navigation = ({ list }) => {
           className={styles.dropdownContent}
         >
           {list.map((item, id) => (
-            <DOMLink
-              key={id}
-              activeClass="active"
-              to={item.link}
-              smooth={true}
-              duration={500}
-            >
-              {item.name}
-            </DOMLink>
+            <Link to={item.link}>{item.name}</Link>
           ))}
         </div>
       </div>

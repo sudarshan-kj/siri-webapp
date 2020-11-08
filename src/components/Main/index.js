@@ -1,25 +1,24 @@
 import React from "react";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
-import { Element } from "react-scroll";
 import Box from "components/generic/Box";
 import drVeeren from "assets/avatars/drVeeren.jpg";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
 import Video from "components/Video";
+import useAutoScroll from "hooks/useAutoScroll";
+
 const Main = () => {
   const [loading, setLoading] = React.useState(true);
   const imageLoaded = () => {
     setLoading(false);
   };
 
-  React.useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useAutoScroll();
 
   return (
-    <Element name="aboutContainer" className={styles.main}>
+    <div className={styles.main}>
       <div className={styles.introContainer}>
         <Box round bgColor="#B22222" radius="100px">
           <h2>{i18n.t("Hello")}</h2>
@@ -93,13 +92,15 @@ const Main = () => {
       <div className={styles.horizontalDivider}>
         <hr />
       </div>
-      <section className={styles.sectionContainer}>
-        <h1 className={styles.contactUsHeader}>{i18n.t("Contact")}</h1>
-        <div className={styles.contactContentContainer}>
-          <ContactUs />
-        </div>
-      </section>
-    </Element>
+      <div id="contact">
+        <section className={styles.sectionContainer}>
+          <h1 className={styles.contactUsHeader}>{i18n.t("Contact")}</h1>
+          <div className={styles.contactContentContainer}>
+            <ContactUs />
+          </div>
+        </section>
+      </div>
+    </div>
   );
 };
 
