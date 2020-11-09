@@ -4,7 +4,7 @@ import { imageCategories } from "assets/slides";
 import useAutoScroll from "hooks/useAutoScroll";
 
 const ProductInfoList = () => {
-  useAutoScroll(true);
+  useAutoScroll(true, true);
 
   return (
     <div className={styles.mainContainer}>
