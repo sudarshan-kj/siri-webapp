@@ -29,14 +29,7 @@ const Logo = () => {
 
   return (
     <div className={styles.logoContainer}>
-      <Link
-        style={{ cursor: "pointer" }}
-        smooth={true}
-        duration={500}
-        to="/home"
-      >
-        {langLogo}
-      </Link>
+      <Link to="/home">{langLogo}</Link>
     </div>
   );
 };

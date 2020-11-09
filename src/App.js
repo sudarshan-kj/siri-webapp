@@ -11,7 +11,7 @@ import { ReactComponent as BackToTopIcon } from "assets/icons/common/top.svg";
 import Card from "components/Card";
 import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";
-import Categories from "components/Categories";
+import Products from "components/Products";
 import { Switch, Route } from "react-router-dom";
 import ProductList from "components/ProductList";
 import NotFound from "components/404";
@@ -50,8 +50,8 @@ const App = () => {
             <ProductList />
           </Card>
         </Route>
-        <Route path="/categories">
-          <Categories />
+        <Route path="/products">
+          <Products />
         </Route>
         <Route>
           <NotFound />

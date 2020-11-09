@@ -17,7 +17,7 @@ const Header = ({ selectedLanguage, onToggleLanguage }) => {
 
   const list = [
     { name: i18n.t("Home"), link: "/" },
-    { name: i18n.t("About"), link: "/categories" },
+    { name: i18n.t("Products"), link: "/products" },
     { name: i18n.t("Contact"), link: "/#contact" },
   ];
 

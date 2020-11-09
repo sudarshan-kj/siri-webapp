@@ -28,7 +28,7 @@ const Main = () => {
       <div>
         <article>
           <section>
-            <Link to="/categories">Categories</Link>
+            <Link to="/products">Products</Link>
 
             <h3>Section 1</h3>
             <p>This is section 1 paragraph</p>

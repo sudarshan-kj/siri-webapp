@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Category.module.css";
+import styles from "./Products.module.css";
 import { imageCategories } from "assets/slides";
 import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
@@ -37,7 +37,7 @@ const compare = (a, b) => {
 
 let sortedImages = imageCategories.sort(compare);
 
-const Categories = () => {
+const Products = () => {
   const categories = i18n.t("Categories", { returnObjects: true });
   useAutoScroll();
   return (
@@ -61,4 +61,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default Products;

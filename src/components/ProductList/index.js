@@ -34,6 +34,7 @@ const Item = ({ heading, image, flip }) => {
         <div className={styles.contentContainer}>
           <div className={styles.textContainer}>
             <h1>{heading}</h1>
+            <p>I am coming</p>
           </div>
           <div className={styles.imageContainer}>
             <img src={image} alt="heading" />
