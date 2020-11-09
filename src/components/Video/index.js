@@ -4,7 +4,7 @@ import siri from "assets/video/siri-movie.mp4";
 
 const Video = () => (
   <div className={styles.container}>
-    <video width="100%" height="100%" controls muted loop autoPlay>
+    <video width="100%" height="100%" playsInline controls muted loop autoPlay>
       <source src={siri} type="video/mp4" />
     </video>
   </div>
