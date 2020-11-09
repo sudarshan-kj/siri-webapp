@@ -13,6 +13,7 @@
 
 .contentContainer {
   display: flex;
+  flex-direction: column-reverse;
   margin: 5rem 0;
 }
 
@@ -46,7 +47,7 @@
   align-items: center;
   position: absolute;
   color: white;
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px 8px 0 0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -72,7 +73,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px 8px 0 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -82,6 +83,17 @@
     align-items: center;
     justify-content: center;
     margin: 2rem;
+  }
+
+  .contentContainer {
+    flex-direction: row;
+  }
+
+  .contentContainer img {
+    border-radius: 0 8px 8px 0;
+  }
+  .contentContainer:hover .imageContainer span {
+    border-radius: 0 8px 8px 0;
   }
 }
 

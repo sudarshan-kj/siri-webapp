@@ -21,6 +21,7 @@ const Box = ({
         backgroundColor: bgColor,
         height: radius,
         width: radius,
+        margin: 0,
         ...fillAttr,
         ...fillShape,
         ...style,

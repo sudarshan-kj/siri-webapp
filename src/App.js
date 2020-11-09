@@ -15,6 +15,7 @@ import Products from "components/Products";
 import { Switch, Route } from "react-router-dom";
 import ProductInfoList from "components/ProductInfoList";
 import NotFound from "components/404";
+import Video from "components/Video";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ const App = () => {
             <Slideshow />
           </Card>
           <Main />
+          <Video />
         </Route>
         <Route path="/productInfoList/:product" component={ProductInfoList} />
         <Route path="/productInfoList" component={ProductInfoList} />
