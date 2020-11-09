@@ -3,25 +3,17 @@ import styles from "./ProductInfoList.module.css";
 import { imageCategories } from "assets/slides";
 import useAutoScroll from "hooks/useAutoScroll";
 
-const ProductInfoList = ({ match }) => {
-  useAutoScroll();
+const ProductInfoList = () => {
+  useAutoScroll(true);
 
   return (
     <div className={styles.mainContainer}>
-      {imageCategories.map((image, index) => {
-        if (index % 2 === 0)
-          return (
-            <div key={image.key} id={image.key} className={styles.card}>
-              <Item heading="Empower me" image={image.path} flip={true} />
-            </div>
-          );
-        else {
-          return (
-            <div key={image.key} id={image.key} className={styles.card}>
-              <Item heading="Empower me" image={image.path} flip={true} />
-            </div>
-          );
-        }
+      {imageCategories.map((image) => {
+        return (
+          <div key={image.key} id={image.key} className={styles.card}>
+            <Item heading="Empower me" image={image.path} flip={true} />
+          </div>
+        );
       })}
     </div>
   );
