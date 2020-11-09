@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./ProductList.module.css";
+import styles from "./ProductInfoList.module.css";
 import images from "assets/banners";
 import useAutoScroll from "hooks/useAutoScroll";
 
-const ProductList = () => {
+const ProductInfoList = () => {
   useAutoScroll();
 
   return (
@@ -67,4 +67,4 @@ const Item = ({ heading, image, flip }) => {
   );
 };
 
-export default ProductList;
+export default ProductInfoList;

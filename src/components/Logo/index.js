@@ -29,7 +29,7 @@ const Logo = () => {
 
   return (
     <div className={styles.logoContainer}>
-      <Link to="/home">{langLogo}</Link>
+      <Link to="/productInfoList">{langLogo}</Link>
     </div>
   );
 };

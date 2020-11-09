@@ -4,6 +4,7 @@ import { imageCategories } from "assets/slides";
 import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
 import useAutoScroll from "hooks/useAutoScroll";
+import { Link } from "react-router-dom";
 import { ReactComponent as agarbattiIcon } from "assets/icons/categories/agarbatti.svg";
 import { ReactComponent as siricafeIcon } from "assets/icons/categories/siricafe.svg";
 import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
@@ -47,13 +48,15 @@ const Products = () => {
 
         if (categories[image.key] && MyComponent)
           return (
-            <IconCard
-              propStyles={styles.icon}
-              Icon={MyComponent}
-              key={image.key}
-            >
-              <p>{categories[image.key].name}</p>
-            </IconCard>
+            <Link to="/productInfoList">
+              <IconCard
+                propStyles={styles.icon}
+                Icon={MyComponent}
+                key={image.key}
+              >
+                <p>{categories[image.key].name}</p>
+              </IconCard>
+            </Link>
           );
         return null;
       })}

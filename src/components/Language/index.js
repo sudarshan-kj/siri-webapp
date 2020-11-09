@@ -1,6 +1,7 @@
 import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "./index.module.css";
+import i18next from "i18next";
 import Toast from "components/generic/Toast";
 import { ReactComponent as LangIcon } from "assets/icons/common/lang-icon.svg";
 
@@ -26,7 +27,8 @@ const isValidLanguage = (lang) => {
   );
 };
 
-const LanguageButton = ({ selectedLanguage, onToggleLanguage }) => {
+const LanguageButton = ({ onToggleLanguage }) => {
+  let selectedLanguage = i18next.language;
   const changeToLanguage = getLanguageObject(selectedLanguage, true)
     .displayName;
 

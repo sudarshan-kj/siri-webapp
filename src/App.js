@@ -13,7 +13,7 @@ import ScrollToTop from "react-scroll-up";
 import Slideshow from "components/SlideShow";
 import Products from "components/Products";
 import { Switch, Route } from "react-router-dom";
-import ProductList from "components/ProductList";
+import ProductInfoList from "components/ProductInfoList";
 import NotFound from "components/404";
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
   const onToggleLanguage = () => {
     let toggledLanguage = getLanguageObject(language, true).value;
     i18next.changeLanguage(toggledLanguage);
-    setLanguage(toggledLanguage); // This ensures re-render
+    setLanguage(toggledLanguage); // This ensures re-render and is currently used for persistence purpose
   };
 
   React.useEffect(() => {
@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Header selectedLanguage={language} onToggleLanguage={onToggleLanguage} />
+      <Header onToggleLanguage={onToggleLanguage} />
       <Switch>
         <Route exact path="/">
           <Card size="max">
@@ -45,9 +45,9 @@ const App = () => {
           </Card>
           <Main />
         </Route>
-        <Route path="/home">
+        <Route path="/productInfoList">
           <Card size="max" noShadow>
-            <ProductList />
+            <ProductInfoList />
           </Card>
         </Route>
         <Route path="/products">

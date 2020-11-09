@@ -8,6 +8,11 @@
   animation: fadein 1s;
 }
 
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .icon {
   transition: transform 0.2s;
 }
