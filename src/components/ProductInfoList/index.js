@@ -3,7 +3,7 @@ import styles from "./ProductInfoList.module.css";
 import images from "assets/banners";
 import useAutoScroll from "hooks/useAutoScroll";
 
-const ProductInfoList = () => {
+const ProductInfoList = ({ match }) => {
   useAutoScroll();
 
   return (
@@ -11,13 +11,13 @@ const ProductInfoList = () => {
       {images.map((image, index) => {
         if (index % 2 === 0)
           return (
-            <div className={styles.card}>
+            <div id={image.key} className={styles.card}>
               <Item heading="Empower me" image={image} flip={true} />
             </div>
           );
         else {
           return (
-            <div className={styles.card}>
+            <div id={image.key} className={styles.card}>
               <Item heading="Empower me" image={image} flip={true} />
             </div>
           );

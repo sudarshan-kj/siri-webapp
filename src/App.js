@@ -45,11 +45,8 @@ const App = () => {
           </Card>
           <Main />
         </Route>
-        <Route path="/productInfoList">
-          <Card size="max" noShadow>
-            <ProductInfoList />
-          </Card>
-        </Route>
+        <Route path="/productInfoList/:product" component={ProductInfoList} />
+        <Route path="/productInfoList" component={ProductInfoList} />
         <Route path="/products">
           <Products />
         </Route>

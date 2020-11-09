@@ -48,7 +48,7 @@ const Products = () => {
 
         if (categories[image.key] && MyComponent)
           return (
-            <Link to="/productInfoList">
+            <Link to={`/productInfoList/${image.key}`}>
               <IconCard
                 propStyles={styles.icon}
                 Icon={MyComponent}
