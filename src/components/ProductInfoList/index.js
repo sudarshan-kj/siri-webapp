@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ProductInfoList.module.css";
-import images from "assets/banners";
+import { imageCategories } from "assets/slides";
 import useAutoScroll from "hooks/useAutoScroll";
 
 const ProductInfoList = ({ match }) => {
@@ -8,17 +8,17 @@ const ProductInfoList = ({ match }) => {
 
   return (
     <div className={styles.mainContainer}>
-      {images.map((image, index) => {
+      {imageCategories.map((image, index) => {
         if (index % 2 === 0)
           return (
-            <div id={image.key} className={styles.card}>
-              <Item heading="Empower me" image={image} flip={true} />
+            <div key={image.key} id={image.key} className={styles.card}>
+              <Item heading="Empower me" image={image.path} flip={true} />
             </div>
           );
         else {
           return (
-            <div id={image.key} className={styles.card}>
-              <Item heading="Empower me" image={image} flip={true} />
+            <div key={image.key} id={image.key} className={styles.card}>
+              <Item heading="Empower me" image={image.path} flip={true} />
             </div>
           );
         }
