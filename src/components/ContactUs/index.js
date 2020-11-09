@@ -23,12 +23,7 @@ const ContactUs = () => {
   React.useEffect(() => {
     const isInViewport = () => {
       const rect = contactRef.current.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= window.innerHeight + 300 &&
-        rect.right <= window.innerWidth
-      );
+      return rect.top <= window.innerHeight;
     };
 
     const inViewPort = () => {
