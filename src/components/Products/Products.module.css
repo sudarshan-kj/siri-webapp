@@ -13,15 +13,9 @@
   color: inherit;
 }
 
-.icon {
-  transition: transform 0.2s;
-}
-
-.icon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #b22222;
-  font-weight: 500;
+.icon:active {
+  background-color: #b2222273;
+  border-radius: 20px;
 }
 
 .container h1 {
@@ -35,6 +29,18 @@
   width: 100%;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+}
+
+@media (hover: hover) {
+  .icon {
+    transition: transform 0.2s;
+  }
+  .icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #b22222;
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 800px) {

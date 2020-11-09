@@ -16,10 +16,12 @@ const Navigation = ({ list }) => {
   React.useEffect(() => {
     if (dropDownVisibility === "none") {
       setDropDownIconOrientation({
+        transition: "transform 0.3s",
         transform: "rotate(0deg)",
       });
     } else {
       setDropDownIconOrientation({
+        transition: "transform 0.5s",
         transform: "rotate(180deg)",
       });
     }
