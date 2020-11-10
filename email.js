@@ -6,19 +6,18 @@ const request = mailjet.post("send", { version: "v3.1" }).request({
   Messages: [
     {
       From: {
-        Email: "kjsudi@gmail.com",
-        Name: "Sudarshan",
+        Email: "web@siridharmasthala.com",
+        Name: "SIRI Web",
       },
       To: [
         {
-          Email: "edjanardhan@gmail.com",
-          Name: "Sudarshan",
+          Email: "kjsudi@gmail.com",
         },
       ],
-      Subject: "Greetings from Mailjet.",
-      TextPart: "My first Mailjet email",
-      HTMLPart:
-        "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+      Subject: "Usage Alert exceeded",
+      TextPart:
+        "Sudarshan, we are informing that a new user has submitted a message on your website. Kindly check your phone for more information",
+      HTMLPart: "<h2>This is a new test email</h1>",
       CustomID: "AppGettingStartedTest",
     },
   ],
