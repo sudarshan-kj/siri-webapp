@@ -15,6 +15,7 @@ const useAutoScroll = (focusCenter = false, transition = false) => {
         if (focusCenter) {
           offset = cardBottom - elementPosition;
         }
+        if (location.hash.slice(1) === "video") offset = 84;
         var offsetPosition = elementPosition - offset;
         window.scrollTo({ top: offsetPosition, behavior: "smooth" });
         if (transition) {
