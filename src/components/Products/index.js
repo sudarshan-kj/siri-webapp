@@ -42,24 +42,27 @@ const Products = () => {
   const categories = i18n.t("Categories", { returnObjects: true });
   useAutoScroll();
   return (
-    <div className={styles.container}>
-      {sortedImages.map((image) => {
-        let MyComponent = components[`${image.key}Icon`];
+    <div className={styles.mainContainer}>
+      <h1>Our Product Range</h1>
+      <div className={styles.container}>
+        {sortedImages.map((image) => {
+          let MyComponent = components[`${image.key}Icon`];
 
-        if (categories[image.key] && MyComponent)
-          return (
-            <Link to={`/productInfoList/#${image.key}`}>
-              <IconCard
-                propStyles={styles.icon}
-                Icon={MyComponent}
-                key={image.key}
-              >
-                <p>{categories[image.key].name}</p>
-              </IconCard>
-            </Link>
-          );
-        return null;
-      })}
+          if (categories[image.key] && MyComponent)
+            return (
+              <Link to={`/productInfoList/#${image.key}`}>
+                <IconCard
+                  propStyles={styles.icon}
+                  Icon={MyComponent}
+                  key={image.key}
+                >
+                  <p>{categories[image.key].name}</p>
+                </IconCard>
+              </Link>
+            );
+          return null;
+        })}
+      </div>
     </div>
   );
 };

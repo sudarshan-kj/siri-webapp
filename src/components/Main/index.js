@@ -19,15 +19,12 @@ const Main = () => {
   return (
     <div className={styles.main}>
       <div className={styles.introContainer}>
-        <Box round bgColor="#B22222" radius="100px">
-          <h2>{i18n.t("Hello")}</h2>
-        </Box>
         <h1>{i18n.t("Introduction")}</h1>
       </div>
       <div>
         <article>
           <section>
-            <Link to="/products">Products</Link>
+            <Link to="/#video">Click to watch a short video</Link>
 
             <h3>Section 1</h3>
             <p>This is section 1 paragraph</p>
