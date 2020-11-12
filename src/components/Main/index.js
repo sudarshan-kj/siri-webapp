@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
 import Box from "components/generic/Box";
-import drVeeren from "assets/avatars/drVeeren.jpg";
+import drVeeren from "assets/avatars/drVeerendraHeggade.jpg";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
@@ -45,7 +45,7 @@ const Main = () => {
           <div className={styles.founderContainer}>
             <Box
               bgColor="rgb(178, 34, 34,0.5)"
-              radius="100px"
+              radius="175px"
               round
               showLoading
               isLoading={loading}
@@ -64,7 +64,7 @@ const Main = () => {
           <div className={styles.founderContainer}>
             <Box
               bgColor="rgb(178, 34, 34,0.5)"
-              radius="100px"
+              radius="175px"
               round
               showLoading
               isLoading={loading}
@@ -78,7 +78,7 @@ const Main = () => {
                 onLoad={imageLoaded}
               />
             </Box>
-            <p>Hemavathi Heggade</p>
+            <p>Smt. Hemavathi Heggade</p>
           </div>
         </div>
       </section>

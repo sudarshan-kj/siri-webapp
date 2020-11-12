@@ -31,10 +31,11 @@ hr {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  margin: 1rem;
 }
 
 .founderContainer p {
-  margin: 0 1rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -50,6 +51,7 @@ hr {
 
 .foundersAvatarList {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
