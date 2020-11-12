@@ -1,12 +1,13 @@
-function Image(path, key) {
+function Image(path, key, icon) {
   this.path = path;
   this.key = key;
+  this.icon = icon;
 }
 
-function helperMethod(file, keysArray, array) {
+function helperMethod(filePath, keysArray, array) {
   for (let i = 0; i < keysArray.length; i++) {
-    if (file.includes(keysArray[i])) {
-      array.push(new Image(file, keysArray[i]));
+    if (filePath.includes(keysArray[i])) {
+      array.push(new Image(filePath, keysArray[i]));
     }
   }
 }
@@ -20,15 +21,16 @@ const allCategories = [
   "phenyl",
   "sirishop",
   "agarbatti",
-  "pushti",
+  "nutritionpowder",
   "siricafe",
-  "rexin",
+  "rexinbags",
 ];
 
 function enrichFiles(files, categoryList) {
   let enrichedFiles = [];
-  files.forEach((file) => {
-    helperMethod(file, categoryList, enrichedFiles);
+  files.forEach((filePath) => {
+    console.log("File paht", filePath);
+    helperMethod(filePath, categoryList, enrichedFiles);
   });
   return enrichedFiles;
 }

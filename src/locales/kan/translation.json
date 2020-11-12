@@ -11,9 +11,8 @@
     "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಮುರುಕು ತಿಂಡಿಗಳು" },
     "phenyl": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಫೀನಿಲ್" },
     "garments": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಉಡುಪುಗಳು" },
-    "tailoring": { "description": "Handmade ಸ್ಥಾಪಕರು", "name": "ಸ್ಥಾಪಕರು" },
-    "pushti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಪುಷ್ಟಿ" },
-    "rexin": { "description": "ರೆಕ್ಸಿನ್ manufacturing", "name": "ರೆಕ್ಸಿನ್" },
+    "nutritionpowder": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಪುಷ್ಟಿ" },
+    "rexinbags": { "description": "ರೆಕ್ಸಿನ್ manufacturing", "name": "ರೆಕ್ಸಿನ್" },
     "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "ಸಿರಿ ಕೆಫೆ" },
     "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "ಸಿರಿ ಅಂಗಡಿ" },
     "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ" }

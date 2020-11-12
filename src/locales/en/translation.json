@@ -8,15 +8,13 @@
   "Founders": "Founders",
   "Categories": {
     "kokum": { "description": "Kokum juice manufacturing", "name": "Kokum Juice" },
-    "snacks": { "description": "Snacks manufacturing", "name": "Snacks" },
+    "snacks": { "description": "Snacks and Savories", "name": "Snacks" },
     "phenyl": { "description": "Phenyl manufacturing", "name": "Phenyls" },
     "garments": { "description": "Garments manufacturing", "name": "Garments" },
-    "tailoring": { "description": "Handmade tailoring", "name": "Tailoring" },
-    "oilfry": { "description": "Snacks manufacturing 2", "name": "Siri Snacks" },
-    "pushti": { "description": "Pushti manufacturing", "name": "Pushti" },
-    "rexin": { "description": "Rexin manufacturing", "name": "Rexin" },
-    "siricafe": { "description": "Siri Millet cafe", "name": "Siri Cafe" },
-    "sirishop": { "description": "Siri Shop Display", "name": "Siri Shop" },
+    "nutritionpowder": { "description": "Nutrition Powder Manufacturing", "name": "Nutrition Powder" },
+    "rexinbags": { "description": "Rexin Bags manufacturing", "name": "Rexin Bags" },
+    "siricafe": { "description": "Siri Millet Café", "name": "Siri Café" },
+    "sirishop": { "description": "Siri Franchise Shop", "name": "Siri Franchise Shop" },
     "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti" }
   }
 }

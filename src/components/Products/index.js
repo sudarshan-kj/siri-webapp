@@ -12,8 +12,9 @@ import { ReactComponent as franchiseIcon } from "assets/icons/categories/franchi
 import { ReactComponent as garmentsIcon } from "assets/icons/categories/garments.svg";
 import { ReactComponent as kokumIcon } from "assets/icons/categories/kokum.svg";
 import { ReactComponent as phenylIcon } from "assets/icons/categories/phenyl.svg";
-import { ReactComponent as pushtiIcon } from "assets/icons/categories/pushti.svg";
+import { ReactComponent as nutritionpowderIcon } from "assets/icons/categories/nutritionpowder.svg";
 import { ReactComponent as sirishopIcon } from "assets/icons/categories/sirishop.svg";
+import { ReactComponent as rexinbagsIcon } from "assets/icons/categories/rexinbags.svg";
 
 const components = {
   agarbattiIcon,
@@ -23,8 +24,9 @@ const components = {
   garmentsIcon,
   kokumIcon,
   phenylIcon,
-  pushtiIcon,
+  nutritionpowderIcon,
   sirishopIcon,
+  rexinbagsIcon,
 };
 const compare = (a, b) => {
   if (a.key < b.key) {
