@@ -5,7 +5,7 @@ import { ReactComponent as FacebookIcon } from "assets/icons/social/fb.svg";
 const Social = () => {
   return (
     <div className={styles.container}>
-      <a href="https://www.facebook.com" target="blank">
+      <a href="https://www.facebook.com/siri.gramodyoga.7" target="blank">
         <FacebookIcon className={styles.fbIcon} />
       </a>
     </div>

@@ -5,42 +5,27 @@ import { ReactComponent as PhoneIcon } from "assets/icons/contact/phone.svg";
 import { ReactComponent as EmailIcon } from "assets/icons/contact/email.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/contact/location.svg";
 import i18n from "utils/i18n";
+import useSlideIn from "hooks/useSlideIn";
 import Social from "components/Social";
 
 const ItemsList = [
-  { icon: PhoneIcon, content: i18n.t("9845587949") },
-  { icon: EmailIcon, content: i18n.t("mdsiri@gmail.com") },
+  { Icon: PhoneIcon, content: "9845587949" },
+  { Icon: EmailIcon, content: "contact@siridharmasthala.com" },
   {
-    icon: LocationIcon,
-    content: i18n.t("#134, 2nd main, 3rd cross, Upkar Layout"),
+    Icon: LocationIcon,
+    content: i18n.t(
+      "T B Cross, Laila, Belthangady, DK District, Karnataka - 574214"
+    ),
   },
 ];
 
 const ContactUs = () => {
-  const [slideIn, setSlideIn] = React.useState("");
-  const contactRef = React.useRef();
-
-  React.useEffect(() => {
-    const isInViewport = () => {
-      const rect = contactRef.current.getBoundingClientRect();
-      return rect.top <= window.innerHeight;
-    };
-
-    const inViewPort = () => {
-      isInViewport() ? setSlideIn("slideIn") : setSlideIn("");
-    };
-
-    document.addEventListener("scroll", inViewPort);
-    return () => {
-      document.removeEventListener("scroll", inViewPort);
-    };
-  }, [contactRef]);
-
+  const [contactRef, slideIn] = useSlideIn();
   return (
     <div ref={contactRef} className={`${styles.container} ${styles[slideIn]}`}>
       {ItemsList.map((item, id) => (
         <div key={id} className={styles.itemContainer}>
-          <item.icon className={styles.icon} />
+          <item.Icon className={styles.icon} />
           {item.content}
         </div>
       ))}

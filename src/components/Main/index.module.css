@@ -6,10 +6,31 @@
   animation: fadein 1.2s;
 }
 
+.main a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #747474;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.main a:hover {
+  color: #b22222;
+  fill: #b22222;
+}
+
+.main p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
 .main h1 {
-  font-size: 1.5rem;
   padding: 0.5rem;
+  font-size: 2rem;
   padding-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   border-left: 6px ridge #b22222;
   color: rgb(116, 116, 116);
 }
@@ -27,11 +48,43 @@ hr {
   border: 0 none;
 }
 
+.iconContainer {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.iconContainer h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.franchiseContainer {
+  margin: 4rem 0;
+}
+
+.linkIcon {
+  margin-right: 1rem;
+  height: 30px;
+  width: 30px;
+}
+
+.franchiseIcon {
+  margin-right: 1rem;
+  height: 60px;
+  width: 60px;
+}
+
 .founderContainer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   margin: 1rem;
+  transition: transform 0.2s;
+}
+
+.founderContainer:hover {
+  transform: scale(1.1);
 }
 
 .founderContainer p {
@@ -57,11 +110,6 @@ hr {
 
 .invisible {
   visibility: hidden;
-}
-
-.slideIn {
-  visibility: visible;
-  animation: slideIn 1s;
 }
 
 @keyframes slideIn {
@@ -91,5 +139,10 @@ hr {
 @media screen and (min-width: 960px) {
   .main {
     max-width: 992px;
+  }
+
+  .slideIn {
+    visibility: visible;
+    animation: slideIn 1s;
   }
 }
