@@ -1,11 +1,18 @@
 {
-  "Introduction": "What is Siri?",
+  "intro_heading": "About Us",
+  "content_para_1": "<0>SIRI</0> was started as a 'not-for-profit' organization under Section <1>80G</1> of the <1>Companies Act</1> in <0>2004</0> at <2>Belthangady Taluk</2>, DK District, Karnataka to provide a platform for women from Self-Help Groups (SHGs) to sell their goods.",
+  "content_para_2": "SIRI has been engaged in promoting the products produced by over <0>3,000</0> <1>Women Self Help Groups</1> from various Districts of Karnataka. Apart from SHGs, certain goods are also produced in-house at the manufacturing facilities spread across 50 interior locations in Dakshina Kannada, Haveri and Dharwad districts.",
+  "watch_video": "Watch a short video here",
+  "check_product_range": "Check our Product Range here",
+  "content_para_3": "Currently, with <1>13 company owned outlets, 13-line sales and 200 plus shops on franchise</1>, SIRI has been capping a turnover of <0>Rs. 25 Crore</0> per annum. However, SIRI envisions to expand its business aggresively in the coming years. To capacitate the envisioned growth, we are eagerly looking for franchise owners at various districts in Karnataka.",
+  "contact_us": "Contact us for more information",
   "Hello": "Hello!",
   "Siri Logo": "Siri Logo",
   "Home": "Home",
   "Products": "Products",
   "Contact": "Contact",
   "Founders": "Founders",
+
   "Categories": {
     "kokum": { "description": "Kokum juice manufacturing", "name": "Kokum Juice" },
     "snacks": { "description": "Snacks and Savories", "name": "Snacks" },
@@ -17,4 +24,6 @@
     "sirishop": { "description": "Siri Franchise Shop", "name": "Siri Franchise Shop" },
     "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti" }
   }
+
+  
 }

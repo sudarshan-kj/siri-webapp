@@ -1,11 +1,18 @@
 {
-  "Introduction": "ಸಿರಿಯನ್ನು 1999 ರಲ್ಲಿ ಶ್ರೀಗಳ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು. ಡಿ ವೀರೇಂದ್ರ ಹೆಗ್ಗಡೆ",
+  "intro_heading": "ನಮ್ಮ ಬಗ್ಗೆ",
+  "content_para_1": "ಸಿರಿಯನ್ನು 1999 ರಲ್ಲಿ ಶ್ರೀಗಳ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು. ಡಿ ವೀರೇಂದ್ರ ಹೆಗ್ಗಡೆ was started as a 'not-for-profit' organization under section 80G of the Companies Act in <1>2004</1> at Belthangady Taluk, DK District, Karnataka to provide a platform for women from SHGs to sell their goods",
+  "content_para_2": "SIRI has been engaged in promoting the products produced by over <0>3,000</0> <1>Women Self Help Groups</1> from various Districts of Karnataka",
+  "watch_video": "ಸಣ್ಣ ವೀಡಿಯೊವನ್ನು ಇಲ್ಲಿ ನೋಡಿ",
+  "check_product_range": "ನಮ್ಮ ಉತ್ಪನ್ನ ಶ್ರೇಣಿಯನ್ನು ಇಲ್ಲಿ ಪರಿಶೀಲಿಸಿ",
+  "content_para_3": "ಸಣ್ಣ ವೀಡಿಯೊವನ್ನು ಇಲ್ಲಿ ",
+  "contact_us": "Contact us for more information",
   "Hello": "ನಮಸ್ತೆ!",
   "Siri Logo": "ಸಿರಿ ಲೋಗೋ",
   "Home": "ಮುಖ್ಯ",
   "Products": "ನಮ್ಮ ಬಗ್ಗೆ",
   "Contact": "ಸಂಪರ್ಕ",
   "Founders": "ಸ್ಥಾಪಕರು",
+
   "Categories": {
     "kokum": { "description": "ಸ್ಥಾಪಕರು juice manufacturing", "name": "ಸ್ಥಾಪಕರು Juice" },
     "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಮುರುಕು ತಿಂಡಿಗಳು" },
@@ -16,6 +23,7 @@
     "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "ಸಿರಿ ಕೆಫೆ" },
     "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "ಸಿರಿ ಅಂಗಡಿ" },
     "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ" }
-    
   }
+
+  
 }
