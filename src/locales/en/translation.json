@@ -22,7 +22,8 @@
     "rexinbags": { "description": "Rexin Bags manufacturing", "name": "Rexin Bags", "longDescription": "Rexin bags for office and school purposes are manufactured at our Headquarters" },
     "siricafe": { "description": "Siri Millet Café", "name": "Siri Café", "longDescription": "Millet Cafe where in a wide variety of Dosas, Rice baths, and other food items are produced only using Millets" },
     "sirishop": { "description": "Siri Franchise Shop", "name": "Siri Franchise Shop", "longDescription": "We provide all the necessary support to anyone who is starting a franchise" },
-    "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" }
+    "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
+    "pickle": { "description": "Pickle manufacturing", "name": "Pickles", "longDescription": "Varieties of pickles: Lemon and Mixed are produced" }
   }
 
   

@@ -15,6 +15,7 @@ import { ReactComponent as phenylIcon } from "assets/icons/categories/phenyl.svg
 import { ReactComponent as nutritionpowderIcon } from "assets/icons/categories/nutritionpowder.svg";
 import { ReactComponent as sirishopIcon } from "assets/icons/categories/sirishop.svg";
 import { ReactComponent as rexinbagsIcon } from "assets/icons/categories/rexinbags.svg";
+import { ReactComponent as pickleIcon } from "assets/icons/categories/pickle.svg";
 
 const components = {
   agarbattiIcon,
@@ -27,7 +28,9 @@ const components = {
   nutritionpowderIcon,
   sirishopIcon,
   rexinbagsIcon,
+  pickleIcon,
 };
+
 const compare = (a, b) => {
   if (a.key < b.key) {
     return -1;
@@ -48,6 +51,7 @@ const Products = () => {
       <h1>Our Product Range</h1>
       <div className={styles.container}>
         {sortedImages.map((image) => {
+          console.log("Images are", image);
           let MyComponent = components[`${image.key}Icon`];
 
           if (categories[image.key] && MyComponent)

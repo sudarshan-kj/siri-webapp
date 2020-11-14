@@ -24,12 +24,12 @@ const allCategories = [
   "nutritionpowder",
   "siricafe",
   "rexinbags",
+  "pickle",
 ];
 
 function enrichFiles(files, categoryList) {
   let enrichedFiles = [];
   files.forEach((filePath) => {
-    console.log("File paht", filePath);
     helperMethod(filePath, categoryList, enrichedFiles);
   });
   return enrichedFiles;

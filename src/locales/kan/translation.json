@@ -22,7 +22,8 @@
     "rexinbags": { "description": "ರೆಕ್ಸಿನ್ manufacturing", "name": "ರೆಕ್ಸಿನ್", "longDescription": "ಸ್ಥಾಪಕರು"  },
     "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "ಸಿರಿ ಕೆಫೆ" , "longDescription": "ಸ್ಥಾಪಕರು" },
     "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "ಸಿರಿ ಅಂಗಡಿ", "longDescription": "ಸ್ಥಾಪಕರು"  },
-    "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ", "longDescription": "ಸ್ಥಾಪಕರು"  }
+    "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ", "longDescription": "ಸ್ಥಾಪಕರು"  }, 
+    "pickle": { "description": "Pickle manufacturing", "name": "Pickles", "longDescription": "Varieties of pickles: Lemon and Mixed are produced" }
   }
 
   
