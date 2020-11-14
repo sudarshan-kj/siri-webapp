@@ -14,15 +14,15 @@
   "Founders": "ಸ್ಥಾಪಕರು",
 
   "Categories": {
-    "kokum": { "description": "ಸ್ಥಾಪಕರು juice manufacturing", "name": "ಸ್ಥಾಪಕರು Juice" },
-    "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಮುರುಕು ತಿಂಡಿಗಳು" },
-    "phenyl": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಫೀನಿಲ್" },
-    "garments": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಉಡುಪುಗಳು" },
-    "nutritionpowder": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಪುಷ್ಟಿ" },
-    "rexinbags": { "description": "ರೆಕ್ಸಿನ್ manufacturing", "name": "ರೆಕ್ಸಿನ್" },
-    "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "ಸಿರಿ ಕೆಫೆ" },
-    "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "ಸಿರಿ ಅಂಗಡಿ" },
-    "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ" }
+    "kokum": { "description": "ಸ್ಥಾಪಕರು juice manufacturing", "name": "ಸ್ಥಾಪಕರು Juice", "longDescription": "ಸ್ಥಾಪಕರು" },
+    "snacks": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಮುರುಕು ತಿಂಡಿಗಳು", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "phenyl": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಫೀನಿಲ್", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "garments": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಉಡುಪುಗಳು", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "nutritionpowder": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಪುಷ್ಟಿ", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "rexinbags": { "description": "ರೆಕ್ಸಿನ್ manufacturing", "name": "ರೆಕ್ಸಿನ್", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "siricafe": { "description": "ಸ್ಥಾಪಕರು Millet cafe", "name": "ಸಿರಿ ಕೆಫೆ" , "longDescription": "ಸ್ಥಾಪಕರು" },
+    "sirishop": { "description": "ಸ್ಥಾಪಕರು Shop Display", "name": "ಸಿರಿ ಅಂಗಡಿ", "longDescription": "ಸ್ಥಾಪಕರು"  },
+    "agarbatti": { "description": "ಸ್ಥಾಪಕರು manufacturing", "name": "ಧೂಪದ್ರವ್ಯ", "longDescription": "ಸ್ಥಾಪಕರು"  }
   }
 
   

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProductInfoList.module.css";
 import { imageCategories } from "assets/slides";
+import i18n from "utils/i18n";
 import useAutoScroll from "hooks/useAutoScroll";
 
 const ProductInfoList = () => {
@@ -9,9 +10,15 @@ const ProductInfoList = () => {
   return (
     <div className={styles.mainContainer}>
       {imageCategories.map((image) => {
+        const categories = i18n.t("Categories", { returnObjects: true });
         return (
           <div key={image.key} id={image.key} className={styles.card}>
-            <Item heading="Empower me" image={image.path} flip={true} />
+            <Item
+              heading={categories[image.key].name}
+              content={categories[image.key].longDescription}
+              image={image.path}
+              flip={true}
+            />
           </div>
         );
       })}
@@ -19,7 +26,7 @@ const ProductInfoList = () => {
   );
 };
 
-const Item = ({ heading, image, flip }) => {
+const Item = ({ heading, content, image, flip }) => {
   return (
     <>
       {flip && (
@@ -30,10 +37,7 @@ const Item = ({ heading, image, flip }) => {
           <div className={styles.imageContainer}>
             <img src={image} alt="heading" />
             <span>
-              <p>
-                This article is about the well being of all and how that can be
-                achieved by just looking at things for the way they are
-              </p>
+              <p>{content}</p>
             </span>
           </div>
         </div>
