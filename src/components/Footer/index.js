@@ -6,9 +6,9 @@ const Footer = () => {
     <div className={styles.footer}>
       <p>&copy; 2020 All rights reserved</p>
       <p className={styles.credits}>
-        Designed and Developed by{" "}
+        Designed and Developed by
         <a href="https://krankj.in" target="_blank" rel="noopener noreferrer">
-          krankj.in
+          &nbsp;krankj.in
         </a>
       </p>
     </div>

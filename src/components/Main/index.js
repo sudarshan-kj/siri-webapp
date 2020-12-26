@@ -59,7 +59,7 @@ const Main = () => {
         <section>
           <div className={` ${styles.iconContainer}`}>
             <FranchiseIcon className={styles.franchiseIcon} />
-            <h3>Franchise Call Out</h3>
+            <h3>{i18n.t("franchise_call_out")}</h3>
           </div>
           <p>
             <Trans i18nKey="content_para_3">
@@ -99,7 +99,7 @@ const Main = () => {
                 onLoad={imageLoaded}
               />
             </Box>
-            <p>Dr D Veerendra Heggade</p>
+            <p>{i18n.t("dr_d_veerendra_heggade")}</p>
           </div>
           <div className={styles.founderContainer}>
             <Box
@@ -118,7 +118,9 @@ const Main = () => {
                 onLoad={imageLoaded}
               />
             </Box>
-            <p>Smt. Hemavathi Heggade</p>
+            <p>
+              <p>{i18n.t("smt_hemavathi_heggade")}</p>
+            </p>
           </div>
         </div>
       </section>
