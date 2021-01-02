@@ -12,3 +12,5 @@ exports.health = (req, res) =>
         req
       )
     );
+
+    exports.getCategories = (req,res)
