@@ -4,6 +4,7 @@ const port = process.env.PORT || 9000;
 const cors = require("cors");
 const log4j = require("log4js");
 const helmet = require("helmet");
+const path = require("path");
 const logger = log4j.getLogger();
 logger.level = "debug";
 
@@ -12,6 +13,7 @@ const { CategoriesRoutes } = require("./routes");
 app.use(cors());
 app.use(helmet());
 app.use(express.urlencoded({ extended: true }));
+app.use("/static", express.static(path.join(__dirname, "public"))); // make files available on public folder under the path 'static'
 app.use(express.json());
 const apiRouter = express.Router();
 

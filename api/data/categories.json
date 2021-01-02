@@ -1,0 +1,81 @@
+[
+    {
+      "key": "agarbattis",
+      "name": "Agarbattis",
+      "path": "/static/images/categories/agarbattis",
+      "subCat": []
+    },
+    {
+      "key": "ayurvedicoils",
+      "name": "Ayurvedic Oils",
+      "path": "/static/images/categories/ayurvedicoils",
+      "subCat": []
+    },
+    {
+      "key": "beverages",
+      "name": "Beverages",
+      "path": "/static/images/categories/ayurvedicoils",
+      "subCat": []
+    },
+    {
+      "key": "cleaningproducts",
+      "name": "Cleaning Products",
+      "path": "/static/images/categories/cleaningproducts",
+      "subCat": [
+        {
+          "key": "bleachingpowder",
+          "name": "Bleaching Powder",
+          "path": "/static/images/categories/cleaningproducts/bleachingpowder",
+          "subCat": []
+        },
+        {
+          "key": "detergents",
+          "name": "Detergents",
+          "path": "/static/images/categories/cleaningproducts/detergents",
+          "subCat": []
+        },
+        {
+          "key": "dishwash",
+          "name": "Dish Wash",
+          "path": "/static/images/categories/cleaningproducts/dishwash",
+          "subCat": []
+        },
+        {
+          "key": "floorwash",
+          "name": "Floor Wash",
+          "path": "/static/images/categories/cleaningproducts/floorwash",
+          "subCat": []
+        },
+        {
+          "key": "handwash",
+          "name": "Hand Wash",
+          "path": "/static/images/categories/cleaningproducts/handwash",
+          "subCat": []
+        },
+        {
+          "key": "phenyls",
+          "name": "Phenyls",
+          "path": "/static/images/categories/cleaningproducts/phenyls",
+          "subCat": []
+        },
+        {
+          "key": "vehiclewash",
+          "name": "Vehicle Wash",
+          "path": "/static/images/categories/cleaningproducts/vehiclewash",
+          "subCat": []
+        }
+      ]
+    },
+    {
+      "key": "garments",
+      "name": "Garments",
+      "path": "/static/images/categories/snacks",
+      "subCat": []
+    },
+    {
+      "key": "snacks",
+      "name": "Snacks",
+      "path": "/static/images/categories/snacks",
+      "subCat": []
+    }
+  ]
