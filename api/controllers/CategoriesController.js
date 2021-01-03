@@ -1,5 +1,5 @@
-const fs = require("fs").promises;
 const path = require("path");
+const { readdir } = require("fs").promises;
 const logger = require("log4js").getLogger();
 logger.level = "debug";
 const response = require("../commons/response");
@@ -22,20 +22,41 @@ exports.health = (req, res) =>
       )
     );
 
-exports.getCategories = (req, res) => {
+exports.getCategories = async (req, res) => {
   const dirPath = path.join(__dirname, "../public/images/categories");
   const imageList = [];
-  fs.readdir(dirPath)
-    .then((files) =>
-      files.forEach((file, id) => {
-        return imageList.push(new Image(file, id));
+
+  async function getFiles(dir) {
+    const dirents = await readdir(dir, { withFileTypes: true });
+
+    const someFiles = dirents.forEach((dirent) =>
+      console.log("The dirents are", path.resolve(dir, dirent.name))
+    );
+
+    const files = await Promise.all(
+      dirents.map((dirent) => {
+        const res = path.resolve(dir, dirent.name);
+        return dirent.isDirectory() ? getFiles(res) : res;
       })
-    )
-    .then(() => res.status(200).send({ images: imageList }))
-    .catch((err) => {
-      res
-        .status(500)
-        .send({ error: "Error occurred while reading the images" });
-      logger.error("Error :", err);
-    });
+    );
+    return files;
+  }
+
+  const images = await getFiles(dirPath);
+
+  // fs.readdir(dirPath)
+  //   .then((files) =>
+  //     files.forEach((file, id) => {
+  //       return imageList.push(new Image(file, id));
+  //     })
+  //   )
+  //   .then(() => res.status(200).send({ images: imageList }))
+  //   .catch((err) => {
+  //     res
+  //       .status(500)
+  //       .send({ error: "Error occurred while reading the images" });
+  //     logger.error("Error :", err);
+  //   });
+
+  return res.status(200).send({ images: images });
 };
