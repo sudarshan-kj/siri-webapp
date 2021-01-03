@@ -7,9 +7,9 @@ categoriesRouter.get("", [
   ValidateRequestMiddleware.validateHeaders,
   CategoriesController.health,
 ]);
-categoriesRouter.get("/header", [
+categoriesRouter.get("/images", [
   ValidateRequestMiddleware.validateHeaders,
-  CategoriesController.health,
+  CategoriesController.getCategories,
 ]);
 
 module.exports = categoriesRouter;
