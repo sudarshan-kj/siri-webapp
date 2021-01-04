@@ -3,16 +3,6 @@ const fs = require("fs");
 const logger = require("log4js").getLogger();
 logger.level = "debug";
 const response = require("../commons/response");
-const categories = require("../data/categories.json");
-
-const entity = (function () {
-  return function (key, name, path, subCat) {
-    this.key = key;
-    this.name = "TEMPORARY";
-    this.path = path;
-    this.subCat = subCat;
-  };
-})();
 
 exports.health = (req, res) =>
   res
@@ -25,20 +15,6 @@ exports.health = (req, res) =>
       )
     );
 
-// const recurseCat = async (cats) => {
-//   for (cat of cats) {
-//     //end of direcotry reached
-
-//     cat.files = ["new thing"];
-//     const dirPath = path.join(__dirname, cat.path);
-//     const dirents = await readdir(dirPath, { withFileTypes: true });
-//     dirents.forEach((dirent) => cat.files.push(dirent));
-//     if (cat.subCat.length) {
-//       recurseCat(cat.subCat);
-//     }
-//   }
-// };
-
 exports.getCategories = (req, res) => {
   const dirPath = path.join(__dirname, "../public/images/categories");
 
@@ -48,7 +24,6 @@ exports.getCategories = (req, res) => {
       const res = path.resolve(dir, dirent.name);
       const category = {
         key: dirent.name,
-        name: "Something new",
         basePath: parentPath + "/" + dirent.name,
         sub: [],
         isFile: false,

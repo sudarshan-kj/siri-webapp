@@ -15,17 +15,20 @@
   "Contact": "Contact",
   "Founders": "Founders",
 
-  "Categories": {
-    "kokum": { "description": "Kokum juice manufacturing", "name": "Kokum Juice", "longDescription": "Kokum juice is produced at our facility, where in a SHG consisting of 8 members produce it on a regular basis" },
-    "snacks": { "description": "Snacks and Savories", "name": "Snacks" , "longDescription": "Snacks produced at our facility, where in a SHG consisting of 6 members produce it"},
-    "phenyl": { "description": "Phenyl manufacturing", "name": "Phenyls", "longDescription": "Phenyls are manufactured across 2 different locations from Belthangady" },
+  "categories": {
+    "agarbattis": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
+    "ayurvedicoils": { "description": "Ayurvedic Oils", "name": "Ayurvedic oils", "longDescription": "Ayurvedic oils" },
+    "beverages": { "description": "Beverages", "name": "Beverages", "longDescription": "Beverages long desc" },
+    "cleaningproducts": { "description": "Cloeaning Products", "name": "cleaningproducts", "longDescription": "Cleaning Products Desc" },
     "garments": { "description": "Garments manufacturing", "name": "Garments", "longDescription": "Garments are manufactured at our Head Quarters" },
+    "millets": { "description": "Millets manufacturing", "name": "Millets", "longDescription": "Variety of millets are manufactured at our facility" },
     "nutritionpowder": { "description": "Nutrition Powder Manufacturing", "name": "Nutrition Powder" , "longDescription": "Our branded Nutrition Powder: Pushti is produced at a clean and hygeinic location"},
+    "oils": { "description": "Oils Manufacturing", "name": "Oils" , "longDescription": "Coconut oils are manufactured at our facility"},
+    "pickles": { "description": "Pickle manufacturing", "name": "Pickles", "longDescription": "Varieties of pickles: Lemon and Mixed are produced" },
+    "readytoeatmixes": { "description": "Ready to eat", "name": "Ready To Eat", "longDescription": "Ready to eat" },
     "rexinbags": { "description": "Rexin Bags manufacturing", "name": "Rexin Bags", "longDescription": "Rexin bags for office and school purposes are manufactured at our Headquarters" },
-    "siricafe": { "description": "Siri Millet Café", "name": "Siri Café", "longDescription": "Millet Cafe where in a wide variety of Dosas, Rice baths, and other food items are produced only using Millets" },
-    "sirishop": { "description": "Siri Franchise Shop", "name": "Siri Franchise Shop", "longDescription": "We provide all the necessary support to anyone who is starting a franchise" },
-    "agarbatti": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
-    "pickle": { "description": "Pickle manufacturing", "name": "Pickles", "longDescription": "Varieties of pickles: Lemon and Mixed are produced" }
+    "snacks": { "description": "Snacks and Savories", "name": "Snacks" , "longDescription": "Snacks produced at our facility, where in a SHG consisting of 6 members produce it"},
+    "spicespowders": { "description": "Spices Powders", "name": "Spices Powders", "longDescription": "Verity of spices powders are manufactured" }
   }
 
   

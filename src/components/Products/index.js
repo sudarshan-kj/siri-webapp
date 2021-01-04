@@ -5,6 +5,7 @@ import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
 import useAutoScroll from "hooks/useAutoScroll";
 import { Link } from "react-router-dom";
+import { authAxios } from "auth";
 import { ReactComponent as agarbattiIcon } from "assets/icons/categories/agarbatti.svg";
 import { ReactComponent as siricafeIcon } from "assets/icons/categories/siricafe.svg";
 import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
@@ -41,35 +42,53 @@ const compare = (a, b) => {
   return 0;
 };
 
-let sortedImages = imageCategories.sort(compare);
-
 const Products = () => {
-  const categories = i18n.t("Categories", { returnObjects: true });
-  useAutoScroll();
-  return (
-    <div className={styles.mainContainer}>
-      <h1>Our Product Range</h1>
-      <div className={styles.container}>
-        {sortedImages.map((image) => {
-          console.log("Images are", image);
-          let MyComponent = components[`${image.key}Icon`];
+  const [categories, setCategories] = React.useState([]);
+  const [error, setError] = React.useState(false);
+  const i18Categories = i18n.t("categories", { returnObjects: true });
 
-          if (categories[image.key] && MyComponent)
-            return (
-              <Link to={`/productInfoList/#${image.key}`}>
-                <IconCard
-                  propStyles={styles.icon}
-                  Icon={MyComponent}
-                  key={image.key}
-                >
-                  <p>{categories[image.key].name}</p>
-                </IconCard>
-              </Link>
-            );
-          return null;
-        })}
+  React.useEffect(() => {
+    authAxios()
+      .get("/categories/images")
+      .then((result) => setCategories(result.data.categories))
+      .catch((err) => {
+        console.log("I am setting the error");
+        setError(true);
+      });
+  }, []);
+
+  useAutoScroll();
+  if (error) {
+    return (
+      <div className={`${styles.container} ${styles.error}`}>
+        Something went wrong
       </div>
-    </div>
+    );
+  }
+  return (
+    <>
+      <div className={styles.mainContainer}>
+        <h1>Our Product Range</h1>
+        <div className={styles.container}>
+          {categories.map((category) => {
+            let icon = components[`${category.key}Icon`];
+            if (categories[category.key] && icon)
+              return (
+                <Link to={`/productInfoList/#${category.key}`}>
+                  <IconCard
+                    propStyles={styles.icon}
+                    Icon={icon}
+                    key={category.key}
+                  >
+                    <p>{categories[category.key].name}</p>
+                  </IconCard>
+                </Link>
+              );
+            return null;
+          })}
+        </div>
+      </div>
+    </>
   );
 };
 
