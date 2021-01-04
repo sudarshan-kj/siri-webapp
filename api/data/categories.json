@@ -2,66 +2,79 @@
   {
     "key": "agarbattis",
     "name": "Agarbattis",
-    "path": "/static/images/categories/agarbattis",
+    "path": "../public/images/categories/agarbattis",
     "subCat": []
   },
   {
     "key": "ayurvedicoils",
     "name": "Ayurvedic Oils",
-    "path": "/static/images/categories/ayurvedicoils",
+    "path": "../public/images/categories/ayurvedicoils",
     "subCat": []
   },
   {
     "key": "beverages",
     "name": "Beverages",
-    "path": "/static/images/categories/ayurvedicoils",
+    "path": "../public/images/categories/ayurvedicoils",
     "subCat": []
   },
   {
     "key": "cleaningproducts",
     "name": "Cleaning Products",
-    "path": "/static/images/categories/cleaningproducts",
+    "path": "../public/images/categories/cleaningproducts",
     "subCat": [
       {
         "key": "bleachingpowder",
         "name": "Bleaching Powder",
-        "path": "/static/images/categories/cleaningproducts/bleachingpowder",
+        "path": "../public/images/categories/cleaningproducts/bleachingpowder",
         "subCat": []
       },
       {
         "key": "detergents",
         "name": "Detergents",
-        "path": "/static/images/categories/cleaningproducts/detergents",
+        "path": "../public/images/categories/cleaningproducts/detergents",
         "subCat": []
       },
       {
         "key": "dishwash",
         "name": "Dish Wash",
-        "path": "/static/images/categories/cleaningproducts/dishwash",
-        "subCat": []
+        "path": "../public/images/categories/cleaningproducts/dishwash",
+        "subCat": [
+          {
+            "key": "liquidsoap",
+            "name": "Liquid Soap",
+            "path": "../public/images/categories/cleaningproducts/dishwash/liquidsoap",
+            "subCat": []
+          },
+          {
+            "key": "powder",
+            "name": "Powder",
+            "path": "../public/images/categories/cleaningproducts/dishwash/powder",
+            "subCat": []
+          }
+        ]
       },
       {
         "key": "floorwash",
         "name": "Floor Wash",
-        "path": "/static/images/categories/cleaningproducts/floorwash",
+        "path": "../public/images/categories/cleaningproducts/floorwash",
         "subCat": []
       },
       {
         "key": "handwash",
         "name": "Hand Wash",
-        "path": "/static/images/categories/cleaningproducts/handwash",
+        "path": "../public/images/categories/cleaningproducts/handwash",
         "subCat": []
       },
       {
         "key": "phenyls",
         "name": "Phenyls",
-        "path": "/static/images/categories/cleaningproducts/phenyls",
+        "path": "../public/images/categories/cleaningproducts/phenyls",
         "subCat": []
       },
       {
         "key": "vehiclewash",
         "name": "Vehicle Wash",
-        "path": "/static/images/categories/cleaningproducts/vehiclewash",
+        "path": "../public/images/categories/cleaningproducts/vehiclewash",
         "subCat": []
       }
     ]
@@ -69,60 +82,60 @@
   {
     "key": "garments",
     "name": "Garments",
-    "path": "/static/images/categories/garments",
+    "path": "../public/images/categories/garments",
     "subCat": []
   },
   {
     "key": "millets",
     "name": "Millets",
-    "path": "/static/images/categories/millets",
+    "path": "../public/images/categories/millets",
     "subCat": []
   },
   {
     "key": "nutritionpowder",
     "name": "Nutrition Powder",
-    "path": "/static/images/categories/nutritionpowder",
+    "path": "../public/images/categories/nutritionpowder",
     "subCat": []
   },
   {
     "key": "oils",
     "name": "Oils",
-    "path": "/static/images/categories/oils",
+    "path": "../public/images/categories/oils",
     "subCat": []
   },
   {
     "key": "pickles",
     "name": "Pickles",
-    "path": "/static/images/categories/snacks",
+    "path": "../public/images/categories/snacks",
     "subCat": []
   },
   {
     "key": "readytoeatmixes",
     "name": "Ready To Eat",
-    "path": "/static/images/categories/readytoeatmixes",
+    "path": "../public/images/categories/readytoeatmixes",
     "subCat": [
       {
         "key": "bisibelebathmix",
         "name": "Bisibelebath Mix",
-        "path": "/static/images/categories/bisibelebathmix",
+        "path": "../public/images/categories/readytoeatmixes/bisibelebathmix",
         "subCat": []
       },
       {
         "key": "puliyogremix",
         "name": "Puliyogre Mix",
-        "path": "/static/images/categories/puliyogremix",
+        "path": "../public/images/categories/readytoeatmixes/puliyogremix",
         "subCat": []
       },
       {
         "key": "ravaidlymix",
         "name": "Rava Idly Mix",
-        "path": "/static/images/categories/ravaidlymix",
+        "path": "../public/images/categories/readytoeatmixes/ravaidlymix",
         "subCat": []
       },
       {
         "key": "upmamix",
         "name": "Upma Mix",
-        "path": "/static/images/categories/upmamix",
+        "path": "../public/images/categories/readytoeatmixes/upmamix",
         "subCat": []
       }
     ]
@@ -130,60 +143,60 @@
   {
     "key": "rexinbags",
     "name": "Rexin Bags",
-    "path": "/static/images/categories/rexinbags",
+    "path": "../public/images/categories/rexinbags",
     "subCat": [
       {
         "key": "collegebags",
         "name": "College Bags",
-        "path": "/static/images/categories/collegebags",
+        "path": "../public/images/categories/rexinbags/collegebags",
         "subCat": []
       },
       {
         "key": "executivebags",
         "name": "Executive Bags",
-        "path": "/static/images/categories/executivebags",
+        "path": "../public/images/categories/rexinbags/executivebags",
         "subCat": []
       },
       {
         "key": "handbags",
         "name": "Hand Bags",
-        "path": "/static/images/categories/handbags",
+        "path": "../public/images/categories/rexinbags/handbags",
         "subCat": []
       },
       {
         "key": "ladiesbags",
         "name": "Ladies Bags",
-        "path": "/static/images/categories/ladiesbags",
+        "path": "../public/images/categories/rexinbags/ladiesbags",
         "subCat": []
       },
       {
         "key": "laptopbags",
         "name": "Laptop Bags",
-        "path": "/static/images/categories/laptopbags",
+        "path": "../public/images/categories/rexinbags/laptopbags",
         "subCat": []
       },
       {
         "key": "luggagebags",
         "name": "Luggage Bags",
-        "path": "/static/images/categories/luggagebags",
+        "path": "../public/images/categories/rexinbags/luggagebags",
         "subCat": []
       },
       {
         "key": "pouchbags",
         "name": "Pouch Bags",
-        "path": "/static/images/categories/pouchbags",
+        "path": "../public/images/categories/rexinbags/pouchbags",
         "subCat": []
       },
       {
         "key": "schoolbags",
         "name": "School Bags",
-        "path": "/static/images/categories/schoolbags",
+        "path": "../public/images/categories/rexinbags/schoolbags",
         "subCat": []
       },
       {
         "key": "tiffinbags",
         "name": "Tiffin Bags",
-        "path": "/static/images/categories/tiffinbags",
+        "path": "../public/images/categories/rexinbags/tiffinbags",
         "subCat": []
       }
     ]
@@ -191,36 +204,36 @@
   {
     "key": "snacks",
     "name": "Snacks",
-    "path": "/static/images/categories/snacks",
+    "path": "../public/images/categories/snacks",
     "subCat": []
   },
   {
     "key": "spicespowders",
     "name": "Spices Powders",
-    "path": "/static/images/categories/spicespowders",
+    "path": "../public/images/categories/spicespowders",
     "subCat": [
       {
         "key": "garammasalapowder",
         "name": "Garam Masala Powder",
-        "path": "/static/images/categories/garammasalapowder",
+        "path": "../public/images/categories/spicespowders/garammasalapowder",
         "subCat": []
       },
       {
         "key": "pulaomasalapowder",
         "name": "Pulao Masala Powder",
-        "path": "/static/images/categories/pulaomasalapowder",
+        "path": "../public/images/categories/spicespowders/pulaomasalapowder",
         "subCat": []
       },
       {
         "key": "rasampowder",
         "name": "Rasam Powder",
-        "path": "/static/images/categories/rasampowder",
+        "path": "../public/images/categories/spicespowders/rasampowder",
         "subCat": []
       },
       {
         "key": "sambharpowder",
         "name": "Sambhar Powder",
-        "path": "/static/images/categories/sambharpowder",
+        "path": "../public/images/categories/spicespowders/sambharpowder",
         "subCat": []
       }
     ]

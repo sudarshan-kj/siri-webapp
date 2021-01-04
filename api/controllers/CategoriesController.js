@@ -1,8 +1,9 @@
 const path = require("path");
-const { readdir } = require("fs").promises;
+const fs = require("fs");
 const logger = require("log4js").getLogger();
 logger.level = "debug";
 const response = require("../commons/response");
+const categories = require("../data/categories.json");
 
 const entity = (function () {
   return function (key, name, path, subCat) {
@@ -24,52 +25,44 @@ exports.health = (req, res) =>
       )
     );
 
-exports.getCategories = async (req, res) => {
+// const recurseCat = async (cats) => {
+//   for (cat of cats) {
+//     //end of direcotry reached
+
+//     cat.files = ["new thing"];
+//     const dirPath = path.join(__dirname, cat.path);
+//     const dirents = await readdir(dirPath, { withFileTypes: true });
+//     dirents.forEach((dirent) => cat.files.push(dirent));
+//     if (cat.subCat.length) {
+//       recurseCat(cat.subCat);
+//     }
+//   }
+// };
+
+exports.getCategories = (req, res) => {
   const dirPath = path.join(__dirname, "../public/images/categories");
-  const imageList = [];
 
-  async function getFiles(dir) {
-    const dirents = await readdir(dir, { withFileTypes: true });
-
-    const someFiles = dirents.forEach((dirent) => {
+  function getFiles(dir, parentPath) {
+    const dirents = fs.readdirSync(dir, { withFileTypes: true });
+    const categories = dirents.map((dirent) => {
+      const res = path.resolve(dir, dirent.name);
+      const category = {
+        key: dirent.name,
+        name: "Something new",
+        basePath: parentPath + "/" + dirent.name,
+        sub: [],
+        isFile: false,
+      };
       if (dirent.isDirectory()) {
-        const person = {
-          key: dirent.name,
-          name: "Something new",
-          path: path.resolve(dir, dirent.name),
-          subCat: [],
-        };
-        console.log("Yes, is a directory");
+        category.sub.push(...getFiles(res, category.basePath));
+      } else {
+        category.isFile = true;
       }
-
-      console.log(dirent.name);
+      return category;
     });
-
-    const files = await Promise.all(
-      dirents.map((dirent) => {
-        const res = path.resolve(dir, dirent.name);
-        console.log("Res", res);
-        return dirent.isDirectory() ? getFiles(res) : res;
-      })
-    );
-    return files;
+    return categories;
   }
 
-  const images = await getFiles(dirPath);
-
-  // fs.readdir(dirPath)
-  //   .then((files) =>
-  //     files.forEach((file, id) => {
-  //       return imageList.push(new Image(file, id));
-  //     })
-  //   )
-  //   .then(() => res.status(200).send({ images: imageList }))
-  //   .catch((err) => {
-  //     res
-  //       .status(500)
-  //       .send({ error: "Error occurred while reading the images" });
-  //     logger.error("Error :", err);
-  //   });
-
-  return res.status(200).send({ images: images });
+  const categories = getFiles(dirPath, "/static/images/categories");
+  return res.status(200).send({ categories });
 };
