@@ -4,10 +4,12 @@ const logger = require("log4js").getLogger();
 logger.level = "debug";
 const response = require("../commons/response");
 
-const Image = (function () {
-  return function (path, id) {
-    this.id = id;
-    this.path = `/static/images/catego/${path}`;
+const entity = (function () {
+  return function (key, name, path, subCat) {
+    this.key = key;
+    this.name = "TEMPORARY";
+    this.path = path;
+    this.subCat = subCat;
   };
 })();
 
@@ -29,13 +31,24 @@ exports.getCategories = async (req, res) => {
   async function getFiles(dir) {
     const dirents = await readdir(dir, { withFileTypes: true });
 
-    const someFiles = dirents.forEach((dirent) =>
-      console.log("The dirents are", path.resolve(dir, dirent.name))
-    );
+    const someFiles = dirents.forEach((dirent) => {
+      if (dirent.isDirectory()) {
+        const person = {
+          key: dirent.name,
+          name: "Something new",
+          path: path.resolve(dir, dirent.name),
+          subCat: [],
+        };
+        console.log("Yes, is a directory");
+      }
+
+      console.log(dirent.name);
+    });
 
     const files = await Promise.all(
       dirents.map((dirent) => {
         const res = path.resolve(dir, dirent.name);
+        console.log("Res", res);
         return dirent.isDirectory() ? getFiles(res) : res;
       })
     );
