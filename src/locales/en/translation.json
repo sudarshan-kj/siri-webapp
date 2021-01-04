@@ -19,7 +19,7 @@
     "agarbattis": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
     "ayurvedicoils": { "description": "Ayurvedic Oils", "name": "Ayurvedic oils", "longDescription": "Ayurvedic oils" },
     "beverages": { "description": "Beverages", "name": "Beverages", "longDescription": "Beverages long desc" },
-    "cleaningproducts": { "description": "Cloeaning Products", "name": "cleaningproducts", "longDescription": "Cleaning Products Desc" },
+    "cleaningproducts": { "description": "Cleaning Products", "name": "Cleaning Products", "longDescription": "Cleaning Products Desc" },
     "garments": { "description": "Garments manufacturing", "name": "Garments", "longDescription": "Garments are manufactured at our Head Quarters" },
     "millets": { "description": "Millets manufacturing", "name": "Millets", "longDescription": "Variety of millets are manufactured at our facility" },
     "nutritionpowder": { "description": "Nutrition Powder Manufacturing", "name": "Nutrition Powder" , "longDescription": "Our branded Nutrition Powder: Pushti is produced at a clean and hygeinic location"},

@@ -15,17 +15,20 @@
   "Contact": "ಸಂಪರ್ಕ",
   "Founders": "ಸ್ಥಾಪಕರು",
 
-  "Categories": {
-    "kokum": { "description": "ಕೊಕಮ್ ಜ್ಯೂಸ್ ತಯಾರಿಕೆ", "name": "ಕೊಕಮ್ ಜ್ಯೂಸ್", "longDescription": "ಕೊಬ್ಬರಿ ಎಣ್ಣೆ, ಜೇನುತುಪ್ಪ, ಕೊಕಮ್ ಜ್ಯೂಸ್, ಹಪ್ಪಳ, ಅಕ್ಕಿರೊಟ್ಟಿ, ವಿವಿಧ ಬಗೆಯ ಉಪ್ಪಿನಕಾಯಿಗಳು." },
-    "snacks": { "description": "ಕರಿದ ತಿಂಡಿಗಳ ತಯಾರಿಕೆ", "name": "ಕರಿದ ತಿಂಡಿಗಳು", "longDescription": "ಮುರುಕು, ಮಿಕ್ಷ್ಚರ್, ಕಾರಕಡ್ಡಿ, ಬಟಾಣಿ ಕಡ್ಲೆ, ಉಪ್ಪುಗಡಲೆ, ನೆಲಗಡಲೆ, ಮಸಾಲಗಡಲೆ , ಸ್ವೀಟ್ ಕಾರ್ನ್, ಖಾರ ಕಾರ್ನ್, ಆಲೂ ಚಿಪ್ಸ್ ಬಾಳೆಕಾಯಿ ಚಿಪ್ಸ್, ದಾಲ್ ಮಿಕ್ಷ್ಚರ್, ಖಾರ ಬೂಂದಿ, ಸೇಮೆ, ಇತ್ಯಾದಿ."  },
-    "phenyl": { "description": "ಫೀನಿಲ್ ತಯಾರಿಕೆ", "name": "ಫೀನಿಲ್", "longDescription": "ವಿವಿಧ ಸುವಾನೆಯ ಫಿನಾಯಿಲ್‍ಗಳು, ಲಿಕ್ವಿಡ್ ಸೋಪ್‍ಗಳಾದ ಹ್ಯಾಂಡ್ ವಾಷ್, ಫ್ಲೋರ್ ವಾಷ್, ವೆಹಿಕಲ್ ವಾಷ್ ಮತ್ತು ಡಿಶ್ ವಾಷ್‍ಗಳು, ಬ್ಲೀಚಿಂಗ್ ಪೌಡರ್, ಡಿಶ್‍ವಾಷ್ ಪೌಡರ್. ಡಿಟರ್ಜೆಂಟ್ ಸೋಪ್, ಡಿಟರ್ಜೆಂಟ್ ಪೌಡರ್."  },
-    "garments": { "description": "ಉಡುಪುಗಳ ತಯಾರಿಕೆ", "name": "ಉಡುಪುಗಳು", "longDescription": "ಖಾದಿ ಸಾರಿಗಳು, ಟಾಪ್ಸ್, ಶಟ್ರ್ಸ್, ಕುರ್ತಾ, ಕುರ್ತಿ, ಜುಬ್ಬಾಗಳು."  },
-    "nutritionpowder": { "description": "ಪೌಷ್ಟಿಕ ಆಹಾರ ತಯಾರಿಕೆ", "name": "ಪೌಷ್ಟಿಕ ಆಹಾರ ಪುಷ್ಠಿ", "longDescription": "ಮಕ್ಕಳ ಬೆಳವಣಿಗೆಗೆ ಪೂರಕವಾದ ಪ್ರೋಟೀನ್ ಹಾಗೂ ಜೀವಸತ್ವಗಳಿಂದ ಕೂಡಿದೆ."  },
+  "categories": {
+    "agarbattis": { "description": "ಅಗರಬತ್ತಿಗಳ ಉತ್ಪಾದನೆ", "name": "ಅಗರಬತ್ತಿಗಳು", "longDescription": "ರೋಸ್, ಶ್ರೀಗಂಧ, ಚಂಪಾ, ಮೋಗ್ರ, ಕೇವುಡ, ಫ್ಯಾನ್ಸಿ ಇಂಟಿಮೇಟ್, ಸಿಂಚನ, ವಿಭೂತಿ, ಸುವಾಸನೆಯ ಒಟ್ಟು 22 ಬಗೆಯ ಅಗರಬತ್ತಿಗಳು ರೋಲ್, ಪೌಚ್ ಹಾಗೂ ಪ್ಯಾಕೆಟ್‍ಗಳಲ್ಲಿ ಲಭ್ಯವಿದೆ."  }, 
+    "ayurvedicoils": { "description": "Ayurvedic Oils", "name": "Ayurvedic oils", "longDescription": "Ayurvedic oils" },
+    "beverages":  { "description": "ಕೊಕಮ್ ಜ್ಯೂಸ್ ತಯಾರಿಕೆ", "name": "ಕೊಕಮ್ ಜ್ಯೂಸ್", "longDescription": "ಕೊಬ್ಬರಿ ಎಣ್ಣೆ, ಜೇನುತುಪ್ಪ, ಕೊಕಮ್ ಜ್ಯೂಸ್, ಹಪ್ಪಳ, ಅಕ್ಕಿರೊಟ್ಟಿ, ವಿವಿಧ ಬಗೆಯ ಉಪ್ಪಿನಕಾಯಿಗಳು." },
+    "cleaningproducts": { "description": "ಫೀನಿಲ್ ತಯಾರಿಕೆ", "name": "ಫೀನಿಲ್", "longDescription": "ವಿವಿಧ ಸುವಾನೆಯ ಫಿನಾಯಿಲ್‍ಗಳು, ಲಿಕ್ವಿಡ್ ಸೋಪ್‍ಗಳಾದ ಹ್ಯಾಂಡ್ ವಾಷ್, ಫ್ಲೋರ್ ವಾಷ್, ವೆಹಿಕಲ್ ವಾಷ್ ಮತ್ತು ಡಿಶ್ ವಾಷ್‍ಗಳು, ಬ್ಲೀಚಿಂಗ್ ಪೌಡರ್, ಡಿಶ್‍ವಾಷ್ ಪೌಡರ್. ಡಿಟರ್ಜೆಂಟ್ ಸೋಪ್, ಡಿಟರ್ಜೆಂಟ್ ಪೌಡರ್."  },
+    "garments":{ "description": "ಉಡುಪುಗಳ ತಯಾರಿಕೆ", "name": "ಉಡುಪುಗಳು", "longDescription": "ಖಾದಿ ಸಾರಿಗಳು, ಟಾಪ್ಸ್, ಶಟ್ರ್ಸ್, ಕುರ್ತಾ, ಕುರ್ತಿ, ಜುಬ್ಬಾಗಳು."  },
+    "millets": { "description": "Millets manufacturing", "name": "Millets", "longDescription": "Variety of millets are manufactured at our facility" },
+    "nutritionpowder":  { "description": "ಪೌಷ್ಟಿಕ ಆಹಾರ ತಯಾರಿಕೆ", "name": "ಪೌಷ್ಟಿಕ ಆಹಾರ ಪುಷ್ಠಿ", "longDescription": "ಮಕ್ಕಳ ಬೆಳವಣಿಗೆಗೆ ಪೂರಕವಾದ ಪ್ರೋಟೀನ್ ಹಾಗೂ ಜೀವಸತ್ವಗಳಿಂದ ಕೂಡಿದೆ."  },
+    "oils": { "description": "Oils Manufacturing", "name": "Oils" , "longDescription": "Coconut oils are manufactured at our facility"},
+    "pickles": { "description": "ಉಪ್ಪಿನಕಾಯಿ ತಯಾರಿಕೆ", "name": "ಉಪ್ಪಿನಕಾಯಿಗಳು", "longDescription": "ಉಪ್ಪಿನಕಾಯಿ ತಯಾರಿಕೆ" },
+    "readytoeatmixes": { "description": "Ready to eat", "name": "Ready To Eat", "longDescription": "Ready to eat" },
     "rexinbags": { "description": "ರೆಕ್ಸಿನ್ ಬ್ಯಾಗುಗಳ ತಯಾರಿಕೆ", "name": "ರೆಕ್ಸಿನ್ ಬ್ಯಾಗುಗಳು", "longDescription": "ಸ್ಕೂಲ್ ಬ್ಯಾಗ್, ಎಕ್ಸಿಕ್ಯೂಟಿವ್ ಬ್ಯಾಗ್, ಫೈಲ್‍ಬ್ಯಾಗ್, ಲಗೇಜ್ ಬ್ಯಾಗ್, ಲ್ಯಾಪ್‍ಟಾಪ್ ಬ್ಯಾಗುಗಳು. ಬೇಡಿಕೆಯ ಮೇರೆಗೆ ವಿವಿಧ ವಿನ್ಯಾಸದ ಬ್ಯಾಗ್‍ಗಳನ್ನು ತಯಾರಿಸಿ ಕೊಡಲಾಗುವುದು."  },
-    "siricafe": { "description": "ಸಿರಿ ಮಿಲ್ಲೆಟ್ ಕೆಫೆ", "name": "ಸಿರಿ ಮಿಲ್ಲೆಟ್ ಕೆಫೆ" , "longDescription": "ದಕ್ಷಿಣ ಕನ್ನಡ ಜಿಲ್ಲೆಯ ಬೆಳ್ತಂಗಡಿ ತಾಲ್ಲೂಕಿನಲ್ಲಿ ಪ್ರಪ್ರಥಮವಾಗಿ ಆರಂಭಿಸಲಾದ ಏಕೈಕ ಸಿರಿಧಾನ್ಯದ ಉಪಹಾರಗೃಹ. ಶುಚಿ-ರುಚಿಯಾದ ಆರೋಗ್ಯಕರ ಸಿರಿಧಾನ್ಯಗಳ ಭೋಜನ ಮತ್ತು ಖಾದ್ಯಗಳ ಜೊತೆಗೆ ಮಕ್ಕಳಿಗೆ ಆಟದ ಮೈದಾನದ ವ್ಯವಸ್ಥೆ." },
-    "sirishop": { "description": "ಸಿರಿ ಫ್ರಾಂಚೈಸಿ ಮಳಿಗೆಗಳು", "name": "ಸಿರಿ ಫ್ರಾಂಚೈಸಿ ಮಳಿಗೆಗಳು ಮತ್ತು ಪ್ರದರ್ಶನ ಮಳಿಗೆಗಳು", "longDescription": "ಸಿರಿ ಫ್ರಾಂಚೈಸಿ ಮಳಿಗೆಗಳು"  },
-    "agarbatti": { "description": "ಅಗರಬತ್ತಿಗಳ ಉತ್ಪಾದನೆ", "name": "ಅಗರಬತ್ತಿಗಳು", "longDescription": "ರೋಸ್, ಶ್ರೀಗಂಧ, ಚಂಪಾ, ಮೋಗ್ರ, ಕೇವುಡ, ಫ್ಯಾನ್ಸಿ ಇಂಟಿಮೇಟ್, ಸಿಂಚನ, ವಿಭೂತಿ, ಸುವಾಸನೆಯ ಒಟ್ಟು 22 ಬಗೆಯ ಅಗರಬತ್ತಿಗಳು ರೋಲ್, ಪೌಚ್ ಹಾಗೂ ಪ್ಯಾಕೆಟ್‍ಗಳಲ್ಲಿ ಲಭ್ಯವಿದೆ."  }, 
-    "pickle": { "description": "ಉಪ್ಪಿನಕಾಯಿ ತಯಾರಿಕೆ", "name": "ಉಪ್ಪಿನಕಾಯಿಗಳು", "longDescription": "ಉಪ್ಪಿನಕಾಯಿ ತಯಾರಿಕೆ" }
+    "snacks": { "description": "ಕರಿದ ತಿಂಡಿಗಳ ತಯಾರಿಕೆ", "name": "ಕರಿದ ತಿಂಡಿಗಳು", "longDescription": "ಮುರುಕು, ಮಿಕ್ಷ್ಚರ್, ಕಾರಕಡ್ಡಿ, ಬಟಾಣಿ ಕಡ್ಲೆ, ಉಪ್ಪುಗಡಲೆ, ನೆಲಗಡಲೆ, ಮಸಾಲಗಡಲೆ , ಸ್ವೀಟ್ ಕಾರ್ನ್, ಖಾರ ಕಾರ್ನ್, ಆಲೂ ಚಿಪ್ಸ್ ಬಾಳೆಕಾಯಿ ಚಿಪ್ಸ್, ದಾಲ್ ಮಿಕ್ಷ್ಚರ್, ಖಾರ ಬೂಂದಿ, ಸೇಮೆ, ಇತ್ಯಾದಿ."  },
+    "spicespowders": { "description": "Spices Powders", "name": "Spices Powders", "longDescription": "Verity of spices powders are manufactured" }
   }
 
   

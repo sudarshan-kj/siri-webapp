@@ -1,45 +1,38 @@
 import React from "react";
 import styles from "./Products.module.css";
-import { imageCategories } from "assets/slides";
 import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
 import useAutoScroll from "hooks/useAutoScroll";
 import { Link } from "react-router-dom";
 import { authAxios } from "auth";
-import { ReactComponent as agarbattiIcon } from "assets/icons/categories/agarbatti.svg";
-import { ReactComponent as siricafeIcon } from "assets/icons/categories/siricafe.svg";
-import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
-import { ReactComponent as franchiseIcon } from "assets/icons/categories/franchise.svg";
+import { ReactComponent as agarbattisIcon } from "assets/icons/categories/agarbattis.svg";
+import { ReactComponent as ayurvedicoilsIcon } from "assets/icons/categories/ayurvedicoils.svg";
+import { ReactComponent as beveragesIcon } from "assets/icons/categories/beverages.svg";
+import { ReactComponent as cleaningproductsIcon } from "assets/icons/categories/cleaningproducts.svg";
 import { ReactComponent as garmentsIcon } from "assets/icons/categories/garments.svg";
-import { ReactComponent as kokumIcon } from "assets/icons/categories/kokum.svg";
-import { ReactComponent as phenylIcon } from "assets/icons/categories/phenyl.svg";
+import { ReactComponent as milletsIcon } from "assets/icons/categories/millets.svg";
 import { ReactComponent as nutritionpowderIcon } from "assets/icons/categories/nutritionpowder.svg";
-import { ReactComponent as sirishopIcon } from "assets/icons/categories/sirishop.svg";
+import { ReactComponent as oilsIcon } from "assets/icons/categories/oils.svg";
+import { ReactComponent as picklesIcon } from "assets/icons/categories/pickles.svg";
+import { ReactComponent as readytoeatmixesIcon } from "assets/icons/categories/readytoeatmixes.svg";
 import { ReactComponent as rexinbagsIcon } from "assets/icons/categories/rexinbags.svg";
-import { ReactComponent as pickleIcon } from "assets/icons/categories/pickle.svg";
+import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
+import { ReactComponent as spicespowdersIcon } from "assets/icons/categories/spicespowders.svg";
 
 const components = {
-  agarbattiIcon,
-  siricafeIcon,
+  agarbattisIcon,
+  ayurvedicoilsIcon,
   snacksIcon,
-  franchiseIcon,
+  oilsIcon,
+  spicespowdersIcon,
   garmentsIcon,
-  kokumIcon,
-  phenylIcon,
+  milletsIcon,
+  readytoeatmixesIcon,
+  beveragesIcon,
+  cleaningproductsIcon,
   nutritionpowderIcon,
-  sirishopIcon,
   rexinbagsIcon,
-  pickleIcon,
-};
-
-const compare = (a, b) => {
-  if (a.key < b.key) {
-    return -1;
-  }
-  if (a.key > b.key) {
-    return 1;
-  }
-  return 0;
+  picklesIcon,
 };
 
 const Products = () => {
@@ -52,7 +45,6 @@ const Products = () => {
       .get("/categories/images")
       .then((result) => setCategories(result.data.categories))
       .catch((err) => {
-        console.log("I am setting the error");
         setError(true);
       });
   }, []);
@@ -72,7 +64,7 @@ const Products = () => {
         <div className={styles.container}>
           {categories.map((category) => {
             let icon = components[`${category.key}Icon`];
-            if (categories[category.key] && icon)
+            if (i18Categories[category.key] && icon)
               return (
                 <Link to={`/productInfoList/#${category.key}`}>
                   <IconCard
@@ -80,7 +72,7 @@ const Products = () => {
                     Icon={icon}
                     key={category.key}
                   >
-                    <p>{categories[category.key].name}</p>
+                    <p>{i18Categories[category.key].name}</p>
                   </IconCard>
                 </Link>
               );
