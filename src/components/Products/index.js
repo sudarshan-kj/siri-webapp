@@ -38,21 +38,33 @@ const components = {
 const Products = () => {
   const [categories, setCategories] = React.useState([]);
   const [error, setError] = React.useState(false);
+  const [isLoading, setLoading] = React.useState(true);
   const i18Categories = i18n.t("categories", { returnObjects: true });
 
   React.useEffect(() => {
     authAxios()
       .get("/categories/images")
-      .then((result) => setCategories(result.data.categories))
+      .then((result) => {
+        setCategories(result.data.categories);
+        setLoading(false);
+      })
       .catch((err) => {
         setError(true);
       });
   }, []);
 
   useAutoScroll();
-  if (error) {
+  if (isLoading) {
     return (
-      <div className={`${styles.container} ${styles.error}`}>
+      <div className={`${styles.container} ${styles.centerSpaced}`}>
+        Loading...
+      </div>
+    );
+  }
+
+  if (error === true) {
+    return (
+      <div className={`${styles.container} ${styles.centerSpaced}`}>
         Something went wrong
       </div>
     );

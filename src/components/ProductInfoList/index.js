@@ -10,7 +10,7 @@ const ProductInfoList = () => {
   return (
     <div className={styles.mainContainer}>
       {imageCategories.map((image) => {
-        const categories = i18n.t("Categories", { returnObjects: true });
+        const categories = i18n.t("categories", { returnObjects: true });
         return (
           <div key={image.key} id={image.key} className={styles.card}>
             <Item
