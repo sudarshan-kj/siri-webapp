@@ -57,6 +57,12 @@ const Products = () => {
   }, []);
 
   useAutoScroll();
+
+  const handleBack = () => {
+    setSubCat({ show: false, value: "" });
+    window.scrollTo(0, 0);
+  };
+
   if (isLoading) {
     return (
       <div className={`${styles.container} ${styles.centerSpaced}`}>
@@ -102,6 +108,7 @@ const Products = () => {
       </div>
       {subCat.show && (
         <ProductInfoList
+          handleBack={handleBack}
           subClick={subCat.value}
           productInfo={flatCategories(categories)}
         />

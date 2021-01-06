@@ -10,7 +10,9 @@ const Box = ({
   style,
   round,
   isLoading,
+  propStyles,
   showLoading,
+  ...rest
 }) => {
   let fillShape = round ? { borderRadius: "50%" } : null;
   let fillAttr = fill ? { padding: 0 } : { padding: "3px" };
@@ -26,7 +28,8 @@ const Box = ({
         ...fillShape,
         ...style,
       }}
-      className={styles.defaultBox}
+      className={`${styles.defaultBox} ${propStyles}`}
+      {...rest}
     >
       {showLoading && (
         <PulseLoader

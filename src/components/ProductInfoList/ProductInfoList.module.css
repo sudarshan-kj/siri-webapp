@@ -1,8 +1,26 @@
+.outerContainer {
+}
+
 .mainContainer {
   max-width: 1000px;
   margin: 0 auto;
   width: 90%;
   animation: fadein 0.7s;
+}
+
+.backButton {
+  background-color: "red";
+  margin: "10px";
+  text-decoration: none;
+  position: fixed;
+  left: 20px;
+  color: "red";
+  color: "purple";
+}
+
+.backButton:hover {
+  cursor: pointer;
+  color: "green";
 }
 
 .card {
@@ -38,7 +56,7 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .contentContainer:hover .imageContainer span {

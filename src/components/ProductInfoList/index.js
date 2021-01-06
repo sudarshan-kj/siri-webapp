@@ -3,12 +3,18 @@ import styles from "./ProductInfoList.module.css";
 import i18n from "utils/i18n";
 import useAutoScroll from "hooks/useAutoScroll";
 import config from "../../config";
+import Box from "components/generic/Box";
+import { Link } from "react-router-dom";
 
-const ProductInfoList = ({ productInfo, subClick }) => {
+const ProductInfoList = ({ productInfo, subClick, handleBack }) => {
   useAutoScroll(true, true, subClick);
 
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.backButton} onClick={handleBack}>
+        Back
+      </div>
+
       {productInfo.map((value) => {
         const i18Categories = i18n.t("categories", { returnObjects: true });
         return (

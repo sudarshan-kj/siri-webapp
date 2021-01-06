@@ -47,7 +47,6 @@ const App = () => {
           <Main />
           <Video />
         </Route>
-        <Route path="/productInfoList/:product" component={ProductInfoList} />
         <Route path="/productInfoList" component={ProductInfoList} />
         <Route path="/products">
           <Products />
