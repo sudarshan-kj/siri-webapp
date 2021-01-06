@@ -1,22 +1,22 @@
 import React from "react";
 import styles from "./ProductInfoList.module.css";
-import { imageCategories } from "assets/slides";
 import i18n from "utils/i18n";
 import useAutoScroll from "hooks/useAutoScroll";
+import config from "../../config";
 
-const ProductInfoList = () => {
-  useAutoScroll(true, true);
+const ProductInfoList = ({ productInfo, subClick }) => {
+  useAutoScroll(true, true, subClick);
 
   return (
     <div className={styles.mainContainer}>
-      {imageCategories.map((image) => {
-        const categories = i18n.t("categories", { returnObjects: true });
+      {productInfo.map((value) => {
+        const i18Categories = i18n.t("categories", { returnObjects: true });
         return (
-          <div key={image.key} id={image.key} className={styles.card}>
+          <div key={value.key} id={value.key} className={styles.card}>
             <Item
-              heading={categories[image.key].name}
-              content={categories[image.key].longDescription}
-              image={image.path}
+              heading={i18Categories[value.key].name}
+              content={i18Categories[value.key].longDescription}
+              image={`${config.API_ENDPOINT}${value.mainImage}`}
               flip={true}
             />
           </div>
@@ -35,7 +35,7 @@ const Item = ({ heading, content, image, flip }) => {
             <h1>{heading}</h1>
           </div>
           <div className={styles.imageContainer}>
-            <img src={image} alt="heading" />
+            <img src={image} alt={heading} />
             <span>
               <p>{content}</p>
             </span>

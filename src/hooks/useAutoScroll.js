@@ -1,11 +1,17 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-const useAutoScroll = (focusCenter = false, transition = false) => {
+const useAutoScroll = (focusCenter = false, transition = false, id) => {
   const location = useLocation();
   React.useEffect(() => {
-    if (location.hash) {
-      let element = document.getElementById(location.hash.slice(1));
+    let divId;
+    if (location.hash || id) {
+      if (location.hash) {
+        divId = location.hash.slice(1);
+      } else if (id) {
+        divId = id;
+      }
+      let element = document.getElementById(divId);
       if (element) {
         window.scrollTo(0, 0); // if coming from another scrolled page (scrolled to bottom),
         //it is necessary to reset the scroll so that we scroll correctly to the element in place
@@ -15,7 +21,7 @@ const useAutoScroll = (focusCenter = false, transition = false) => {
         if (focusCenter) {
           offset = cardBottom - elementPosition;
         }
-        if (location.hash.slice(1) === "video") offset = 84;
+        if (divId === "video") offset = 84;
         var offsetPosition = elementPosition - offset;
         window.scrollTo({ top: offsetPosition, behavior: "smooth" });
         if (transition) {

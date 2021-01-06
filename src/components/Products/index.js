@@ -4,7 +4,7 @@ import i18n from "utils/i18n";
 import IconCard from "components/IconCard";
 import useAutoScroll from "hooks/useAutoScroll";
 import { Link } from "react-router-dom";
-import { authAxios } from "auth";
+import fetchCategories from "helpers/fetchCategories";
 import { ReactComponent as agarbattisIcon } from "assets/icons/categories/agarbattis.svg";
 import { ReactComponent as ayurvedicoilsIcon } from "assets/icons/categories/ayurvedicoils.svg";
 import { ReactComponent as beveragesIcon } from "assets/icons/categories/beverages.svg";
@@ -18,6 +18,8 @@ import { ReactComponent as readytoeatmixesIcon } from "assets/icons/categories/r
 import { ReactComponent as rexinbagsIcon } from "assets/icons/categories/rexinbags.svg";
 import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg";
 import { ReactComponent as spicespowdersIcon } from "assets/icons/categories/spicespowders.svg";
+import ProductInfoList from "components/ProductInfoList";
+import { flatCategories } from "helpers/parsingHelper";
 
 const components = {
   agarbattisIcon,
@@ -37,20 +39,21 @@ const components = {
 
 const Products = () => {
   const [categories, setCategories] = React.useState([]);
+  const [subCat, setSubCat] = React.useState({ show: false, value: "" });
   const [error, setError] = React.useState(false);
   const [isLoading, setLoading] = React.useState(true);
   const i18Categories = i18n.t("categories", { returnObjects: true });
 
   React.useEffect(() => {
-    authAxios()
-      .get("/categories/images")
-      .then((result) => {
-        setCategories(result.data.categories);
+    (async function () {
+      const categories = await fetchCategories();
+      if (categories) {
+        setCategories(categories);
         setLoading(false);
-      })
-      .catch((err) => {
+      } else {
         setError(true);
-      });
+      }
+    })();
   }, []);
 
   useAutoScroll();
@@ -74,24 +77,35 @@ const Products = () => {
       <div className={styles.mainContainer}>
         <h1>Our Product Range</h1>
         <div className={styles.container}>
-          {categories.map((category) => {
-            let icon = components[`${category.key}Icon`];
-            if (i18Categories[category.key] && icon)
-              return (
-                <Link to={`/productInfoList/#${category.key}`}>
-                  <IconCard
-                    propStyles={styles.icon}
-                    Icon={icon}
-                    key={category.key}
+          {!subCat.show &&
+            categories.map((category) => {
+              let icon = components[`${category.key}Icon`];
+              if (i18Categories[category.key] && icon)
+                return (
+                  <Link
+                    onClick={() =>
+                      setSubCat({ show: true, value: category.key })
+                    }
                   >
-                    <p>{i18Categories[category.key].name}</p>
-                  </IconCard>
-                </Link>
-              );
-            return null;
-          })}
+                    <IconCard
+                      propStyles={styles.icon}
+                      Icon={icon}
+                      key={category.key}
+                    >
+                      <p>{i18Categories[category.key].name}</p>
+                    </IconCard>
+                  </Link>
+                );
+              return null;
+            })}
         </div>
       </div>
+      {subCat.show && (
+        <ProductInfoList
+          subClick={subCat.value}
+          productInfo={flatCategories(categories)}
+        />
+      )}
     </>
   );
 };

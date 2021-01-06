@@ -16,7 +16,7 @@
   "Founders": "Founders",
 
   "categories": {
-    "agarbattis": { "description": "Agarbatti manufacturing", "name": "Agarbatti", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
+    "agarbattis": { "description": "Agarbatti manufacturing", "name": "Agarbattis", "longDescription": "Agarbatti manufacutring is spread across 2 different locations, which are produced by women SHGs consisting of 8 members" },
     "ayurvedicoils": { "description": "Ayurvedic Oils", "name": "Ayurvedic oils", "longDescription": "Ayurvedic oils" },
     "beverages": { "description": "Beverages", "name": "Beverages", "longDescription": "Beverages long desc" },
     "cleaningproducts": { "description": "Cleaning Products", "name": "Cleaning Products", "longDescription": "Cleaning Products Desc" },
