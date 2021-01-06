@@ -20,6 +20,7 @@ import { ReactComponent as snacksIcon } from "assets/icons/categories/snacks.svg
 import { ReactComponent as spicespowdersIcon } from "assets/icons/categories/spicespowders.svg";
 import ProductInfoList from "components/ProductInfoList";
 import { flatCategories } from "helpers/parsingHelper";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const components = {
   agarbattisIcon,
@@ -66,6 +67,7 @@ const Products = () => {
   if (isLoading) {
     return (
       <div className={`${styles.container} ${styles.centerSpaced}`}>
+        <PulseLoader size={10} color="#b22222" loading={isLoading} />
         Loading...
       </div>
     );

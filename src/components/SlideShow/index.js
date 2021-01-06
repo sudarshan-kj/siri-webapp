@@ -1,26 +1,39 @@
 import React, { useState } from "react";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
-import { imageCategories } from "assets/slides";
 import { css } from "@emotion/core";
 import PulseLoader from "react-spinners/PulseLoader";
 import styles from "./index.module.css";
 import i18n from "utils/i18n";
 import { ReactComponent as Arrow } from "assets/icons/common/left-arrow.svg";
+import fetchCategories from "helpers/fetchCategories";
+import { flatCategories } from "helpers/parsingHelper";
+import config from "config";
 
 const Slideshow = () => {
+  const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+
   const override = css`
     display: block;
     margin: 0 auto;
     border-color: red;
   `;
 
+  React.useEffect(() => {
+    (async function () {
+      const categories = await fetchCategories();
+      if (categories) {
+        setCategories(categories);
+      }
+    })();
+  }, []);
+
   const imageLoaded = () => {
     setLoading(false);
   };
 
-  const Categories = i18n.t("Categories", { returnObjects: true });
+  const i18Categories = i18n.t("categories", { returnObjects: true });
 
   return (
     <div>
@@ -57,14 +70,25 @@ const Slideshow = () => {
         duration={2000}
         transitionDuration={500}
       >
-        {imageCategories.map((image) => {
+        {flatCategories(categories).map((value) => {
           return (
             <div className={styles.eachSlide}>
               <div className={styles.bgContainer}>
-                <img src={image.path} alt="fornow" onLoad={imageLoaded} />
+                <img
+                  className={styles.firstImage}
+                  src={`${config.API_ENDPOINT}${value.mainImage}`}
+                  alt="fornow"
+                  onLoad={imageLoaded}
+                />
+                <img
+                  className={styles.secondImage}
+                  src={`${config.API_ENDPOINT}${value.mainImage}`}
+                  alt="fornow"
+                  onLoad={imageLoaded}
+                />
                 <span className={styles.tint}>
-                  {Categories[image.key] && (
-                    <h1>{Categories[image.key].description}</h1>
+                  {i18Categories[value.key] && (
+                    <h1>{i18Categories[value.key].description}</h1>
                   )}
                 </span>
               </div>

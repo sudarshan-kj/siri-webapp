@@ -3,8 +3,7 @@ import styles from "./ProductInfoList.module.css";
 import i18n from "utils/i18n";
 import useAutoScroll from "hooks/useAutoScroll";
 import config from "../../config";
-import Box from "components/generic/Box";
-import { Link } from "react-router-dom";
+import imageNotFound from "assets/backgrounds/bg-2.png";
 
 const ProductInfoList = ({ productInfo, subClick, handleBack }) => {
   useAutoScroll(true, true, subClick);
@@ -14,7 +13,6 @@ const ProductInfoList = ({ productInfo, subClick, handleBack }) => {
       <div className={styles.backButton} onClick={handleBack}>
         Back
       </div>
-
       {productInfo.map((value) => {
         const i18Categories = i18n.t("categories", { returnObjects: true });
         return (
@@ -41,7 +39,13 @@ const Item = ({ heading, content, image, flip }) => {
             <h1>{heading}</h1>
           </div>
           <div className={styles.imageContainer}>
-            <img src={image} alt={heading} />
+            <img
+              src={image}
+              alt={heading}
+              onError={(e) => {
+                e.target.src = imageNotFound;
+              }}
+            />
             <span>
               <p>{content}</p>
             </span>

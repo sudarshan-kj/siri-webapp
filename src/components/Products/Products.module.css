@@ -1,6 +1,5 @@
 .mainContainer h1 {
   margin: 0;
-  margin-bottom: 5rem;
   text-align: center;
   background-color: #b22222;
   color: white;
@@ -20,7 +19,10 @@
 
 .centerSpaced {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-flow: column wrap;
+  height: 90vh;
 }
 
 .container a {

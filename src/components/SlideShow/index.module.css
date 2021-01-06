@@ -43,17 +43,19 @@
   position: relative;
   width: 100%;
   height: 400px;
+  display: flex;
 }
 
-.eachSlide > div img {
+.firstImage {
+  position: absolute;
+}
+
+.secondImage {
   pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*Removed z-index from here */
-  /*This background sets the color of the container when the image has not loaded yet, provided there is no enclosing 
-  container whose bg color has been set. In our case, we do have an enclosing container and hence this property shall not be applied */
   background: #000000a2;
 }
 
@@ -105,6 +107,25 @@
 
   .bgContainer:hover .tint {
     animation: fadeInImg 0.5s forwards;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .firstImage {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000000a2;
+  }
+  .secondImage {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000000a2;
   }
 }
 
