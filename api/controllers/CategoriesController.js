@@ -10,7 +10,7 @@ exports.health = (req, res) =>
     .send(
       response.successResponse(
         "HEALTH_OK",
-        "This is the message and it is ok",
+        "SIRI backend is up and running",
         req
       )
     );
