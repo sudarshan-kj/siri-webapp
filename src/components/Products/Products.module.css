@@ -30,6 +30,10 @@
   color: inherit;
 }
 
+.container p {
+  font-size: 1.5rem;
+}
+
 .icon:active {
   background-color: #b2222273;
   border-radius: 20px;

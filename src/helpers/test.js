@@ -385,7 +385,6 @@ var flatCats = [];
 
 function getCategories(categories) {
   function deepLookUp(subCats, parent) {
-    console.log("Inside deep look up", parent);
     let cat = {
       key: parent,
       subCat: [],
@@ -399,7 +398,6 @@ function getCategories(categories) {
         deepLookUp(element.sub, element.key);
       }
     });
-    console.log("Now pushing the category for", parent);
     flatCats.push(cat);
   }
 

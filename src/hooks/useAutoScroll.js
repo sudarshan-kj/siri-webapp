@@ -37,7 +37,7 @@ const useAutoScroll = (focusCenter = false, transition = false, id) => {
     } else {
       window.scrollTo(0, 0);
     }
-  }, [location, focusCenter, transition]);
+  }, [location, focusCenter, transition, id]);
 };
 
 export default useAutoScroll;

@@ -25,7 +25,7 @@ export const parseCategories = (category, categories, fetchAllImageLinks) => {
   return parsedCategories[0];
 };
 
-//This method returns all the root categoires, in a flat hierarchy, making sure all its images are also listed in them
+//This method returns all the root categories, in a flat hierarchy, making sure all its images are also listed in them
 
 export const flatCategories = (categories) => {
   const flatCats = [];
@@ -52,6 +52,4 @@ export const flatCategories = (categories) => {
   return flatCats;
 };
 
-export const getSubCategories = (categories) => {
-  const flatCats = [];
-};
+export const getSubCategories = (categories) => {};

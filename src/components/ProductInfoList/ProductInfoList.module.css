@@ -27,9 +27,9 @@
   position: relative;
 }
 
-.imageContainer span {
+/* .contentContainer:hover .imageContainer span {
   display: none;
-}
+} */
 
 .imageContainer span p {
   padding: 3rem;
@@ -41,7 +41,7 @@
   transform: scale(1.05);
 }
 
-.contentContainer:hover .imageContainer span {
+.contentContainer .imageContainer span {
   display: flex;
   justify-content: center;
   align-items: center;
