@@ -1,5 +1,5 @@
 .mainContainer {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   width: 90%;
   animation: fadein 0.7s;
@@ -9,23 +9,6 @@
   box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: transform 0.2s;
-}
-
-.backButton {
-  position: sticky;
-  top: 90px;
-  z-index: 999;
-  background-color: #b22222;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-family: "Merriweather", "Roboto Slab";
-}
-
-.backButton:hover {
-  cursor: pointer;
 }
 
 .contentContainer {
@@ -106,7 +89,7 @@
     background-color: #b22222;
     text-decoration: none;
     position: fixed;
-    left: 10%;
+    left: 50px;
     z-index: 999;
     color: white;
     padding: 10px;

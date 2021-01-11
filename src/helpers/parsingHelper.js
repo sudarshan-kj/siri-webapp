@@ -1,10 +1,8 @@
+//This method is going to consume all the categories, and return the specific category mentioned. If fetchAllImageLinks are true,
+// then, all the images pertaining to that category are also fetched.
+
 export const parseCategories = (category, categories, fetchAllImageLinks) => {
-  const parsedCategories = categories.filter((value) => {
-    if (value.key === category) {
-      return true;
-    }
-    return false;
-  });
+  const parsedCategories = categories.filter((value) => value.key === category);
   if (fetchAllImageLinks) {
     const categoryMetaData = {
       key: category,
@@ -26,6 +24,8 @@ export const parseCategories = (category, categories, fetchAllImageLinks) => {
   }
   return parsedCategories[0];
 };
+
+//This method returns all the root categoires, in a flat hierarchy, making sure all its images are also listed in them
 
 export const flatCategories = (categories) => {
   const flatCats = [];
@@ -50,4 +50,8 @@ export const flatCategories = (categories) => {
     flatCats.push(flattenedCategory);
   });
   return flatCats;
+};
+
+export const getSubCategories = (categories) => {
+  const flatCats = [];
 };
