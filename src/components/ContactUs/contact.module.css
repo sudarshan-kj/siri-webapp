@@ -10,13 +10,16 @@
 .icon {
   height: 30px;
   width: 30px;
+  fill: maroon;
   margin-right: 1rem;
 }
 
 .itemContainer {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
 }
 
 .mapContainer {
@@ -48,5 +51,17 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    height: 20px;
+    width: 20px;
+    fill: maroon;
+    margin-right: 0.8rem;
+  }
+  .itemContainer {
+    font-size: 0.9rem;
   }
 }

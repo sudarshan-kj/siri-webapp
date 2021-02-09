@@ -28,6 +28,12 @@ const Main = () => {
       <div className={styles.introContainer}>
         <h1>{i18n.t("intro_heading")}</h1>
         <p>
+          <Trans i18nKey="content_para_0">
+            <strong />
+            <i />
+          </Trans>
+        </p>
+        <p>
           <Trans i18nKey="content_para_1">
             <strong />
             <i />

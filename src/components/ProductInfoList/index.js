@@ -11,7 +11,7 @@ const ProductInfoList = ({ productInfo, subClick, handleBack }) => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.backButton} onClick={handleBack}>
-        Back
+        {i18n.t("back")}
       </div>
       {productInfo.map((value) => {
         const i18Categories = i18n.t("categories", { returnObjects: true });

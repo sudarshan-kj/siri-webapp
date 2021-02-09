@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./contact.module.css";
 import Card from "components/Card";
-import { ReactComponent as PhoneIcon } from "assets/icons/contact/phone.svg";
+import { ReactComponent as MobilePhoneIcon } from "assets/icons/contact/mobile.svg";
+import { ReactComponent as TelephoneIcon } from "assets/icons/contact/telephone.svg";
 import { ReactComponent as EmailIcon } from "assets/icons/contact/email.svg";
 import { ReactComponent as LocationIcon } from "assets/icons/contact/location.svg";
 import i18n from "utils/i18n";
@@ -9,7 +10,8 @@ import useSlideIn from "hooks/useSlideIn";
 import Social from "components/Social";
 
 const ItemsList = [
-  { Icon: PhoneIcon, content: "9845587949" },
+  { Icon: MobilePhoneIcon, content: "9845587949" },
+  { Icon: TelephoneIcon, content: "08256-234760" },
   { Icon: EmailIcon, content: "contact@siridharmasthala.com" },
   {
     Icon: LocationIcon,
@@ -43,7 +45,7 @@ const ContactUs = () => {
         </Card>
       </div>
       <div className={styles.socialContainer}>
-        <p>Connect with us </p>
+        <p>{i18n.t("connect_with_us")}</p>
         <Social />
       </div>
     </div>

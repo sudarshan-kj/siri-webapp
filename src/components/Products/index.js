@@ -83,7 +83,7 @@ const Products = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-        <h1>Our Product Range</h1>
+        <h1>{i18n.t("our_product_range")}</h1>
         <div className={styles.container}>
           {!subCat.show &&
             categories.map((category) => {
