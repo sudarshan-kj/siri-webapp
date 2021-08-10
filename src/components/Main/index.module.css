@@ -6,6 +6,15 @@
   animation: fadein 1.2s;
 }
 
+.downloadFile {
+  padding: 1rem;
+  background-color: #b22222;
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
 .main a {
   display: flex;
   align-items: center;
