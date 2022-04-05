@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 import i18n from "utils/i18n";
 import Box from "components/generic/Box";
 import drVeeren from "assets/avatars/drVeerendraHeggade.jpg";
-import tenderDocument from "assets/files/tenderDocument-2.docx";
+import tenderDocument from "assets/files/tenderDocument-3.docx";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
