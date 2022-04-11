@@ -4,6 +4,7 @@ import i18n from "utils/i18n";
 import Box from "components/generic/Box";
 import drVeeren from "assets/avatars/drVeerendraHeggade.jpg";
 import tenderDocument from "assets/files/tenderDocument-3.docx";
+import corrigendumDocument from "assets/files/corrigendum-2.pdf";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
@@ -26,9 +27,20 @@ const Main = () => {
 
   return (
     <>
-      <a className={styles.downloadFile} href={tenderDocument} target="_blank">
-        Click here to Download Jackfruit Cluster Tender Document
-      </a>
+      <div className={styles.downloadFileContainer}>
+        <ol className={styles.downloadFile}>
+          <li>
+            <a href={tenderDocument} target="_blank">
+              Download Jackfruit Cluster Tender Document
+            </a>
+          </li>
+          <li>
+            <a href={corrigendumDocument} target="_blank">
+              Download Corrigendum Document
+            </a>
+          </li>
+        </ol>
+      </div>
       <div className={styles.main}>
         <div className={styles.introContainer}>
           <h1>{i18n.t("intro_heading")}</h1>
