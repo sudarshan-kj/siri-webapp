@@ -5,6 +5,7 @@ import Box from "components/generic/Box";
 import drVeeren from "assets/avatars/drVeerendraHeggade.jpg";
 import tenderDocument from "assets/files/tenderDocument-3.docx";
 import corrigendumDocument from "assets/files/corrigendum-2.pdf";
+import machineryTenderDocument from "assets/files/machinery-document.pdf";
 import hemavathiHeggade from "assets/avatars/hemavathiheggade.jpg";
 import ContactUs from "components/ContactUs";
 import { Link } from "react-router-dom";
@@ -37,6 +38,11 @@ const Main = () => {
           <li>
             <a href={corrigendumDocument} target="_blank">
               Download Corrigendum Document
+            </a>
+          </li>
+          <li>
+            <a href={machineryTenderDocument} target="_blank">
+              Download Machinery Tender Document
             </a>
           </li>
         </ol>
