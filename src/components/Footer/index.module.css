@@ -22,3 +22,8 @@
 .credits a:hover {
   color: #b22222;
 }
+
+.updated {
+  font-size: 10px;
+  margin: 0;
+}

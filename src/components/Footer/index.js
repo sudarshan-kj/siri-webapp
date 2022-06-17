@@ -11,6 +11,7 @@ const Footer = () => {
           &nbsp;krankj.in
         </a>
       </p>
+      <p className={styles.updated}>Updated on 17.06.2022</p>
     </div>
   );
 };
